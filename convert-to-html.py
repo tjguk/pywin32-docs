@@ -272,11 +272,16 @@ def main (args=[]):
         open (html2_filepath, "w").write (html.encode ("utf8"))
 
   try:
-    import svn.local
+    import git
   except ImportError:
     args.add("nochanges")
   if "nochanges" not in args:
     print "Finding changes..."
+    wc = git.Repo(".")
+    added = [f for f in wc.untracked_files if f.startswith(html2_tempdir) and f.endswith(".html")]
+    changed = [item.a_path for item in wc.index.diff() if item.a_path.startswith(html2_tempdir) and item.a_path.endswith(".html")]
+    wc.index.add(added)
+
     UNCHANGED = ["normal", "ignored"] ## pysvn.wc_status_kind.normal, pysvn.wc_status_kind.ignored]
     EXCLUDE_FROM_CHANGES = ["changes.html", "convert_to_html.py", "pywin32.chm"]
     wc = svn.local.LocalClient(".")
