@@ -1,0 +1,30 @@
+body {
+  font-family: "Bitstream Vera Sans", Verdana, sans-serif;
+  background-color : #eee;
+  padding : 3em;
+}
+div#content {
+  background-color : white;
+  border : 1px solid #333;
+  padding : 1em;
+}
+div#content h1 {
+  font-family : "Trebuchet MS", Tahoma, sans-serif;
+}
+div.navigation {
+  margin-bottom : 1em;
+  font-size : 84%;
+}
+
+@media print {
+  body {
+    padding : 0;
+  }
+  div.navigation {
+    display : none;
+  }
+  div#content {
+    border : none;
+    padding : 0;
+  }
+}
