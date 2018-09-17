@@ -1,0 +1,78 @@
+
+<html>
+  <head>
+    <title>WIN32_FIND_DATA Object</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_objects.html">Objects</a> &gt; <a href="WIN32_FIND_DATA">WIN32_FIND_DATA</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>WIN32_FIND_DATA Object</H1><P>
+
+A tuple representing a WIN32_FIND_DATA structure.<P>
+
+<H3>Items</H3><P><DL><DT>[0] <I>int</I> : attributes<P>
+
+<DD>File Attributes.  A combination of the win32com.FILE_ATTRIBUTE_* flags.<P></DL>
+
+<DL><DT>[1] <I><A HREF="PyTime.html">PyTime</A></I> : createTime<P>
+
+<DD>File creation time.<P></DL>
+
+<DL><DT>[2] <I><A HREF="PyTime.html">PyTime</A></I> : accessTime<P>
+
+<DD>File access time.<P></DL>
+
+<DL><DT>[3] <I><A HREF="PyTime.html">PyTime</A></I> : writeTime<P>
+
+<DD>Time of last file write<P></DL>
+
+<DL><DT>[4] <I>int</I> : nFileSizeHigh<P>
+
+<DD>high order DWORD of file size.<P></DL>
+
+<DL><DT>[5] <I>int</I> : nFileSizeLow<P>
+
+<DD>low order DWORD of file size.<P></DL>
+
+<DL><DT>[6] <I>int</I> : reserved0<P>
+
+<DD>Contains reparse tag if path is a reparse point<P></DL>
+
+<DL><DT>[7] <I>int</I> : reserved1<P>
+
+<DD>Reserved.<P></DL>
+
+<DL><DT>[8] <I>str/unicode</I> : fileName<P>
+
+<DD>The name of the file.<P></DL>
+
+<DL><DT>[9] <I>str/unicode</I> : alternateFilename<P>
+
+<DD>Alternative name of the file, expressed in 8.3 format.<P></DL>
+
+
+    </div>
+  </body>
+</html>

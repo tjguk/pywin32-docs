@@ -1,0 +1,70 @@
+
+<html>
+  <head>
+    <title>error Object</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_objects.html">Objects</a> &gt; <a href="error">error</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>error Object</H1><P>
+
+An exception raised when a win32 error occurs<P>
+
+<H3>Comments</H3>
+
+This error is defined in the pywintypes module, but most 
+
+of the win32 modules expose this error object via their own 
+
+error attribute - eg, win32api.error is pywintypes.error is 
+
+win32gui.error.<P>
+
+This exception is derived from the standard Python Exception object.<P>
+
+Instances of these exception can be accessed via indexing 
+
+or via attribute access.  Attribute access is more forwards 
+
+compatible with Python 3, so is recommended.<P>
+
+See also <A HREF="com_error.html">com_error</A><P>
+
+<H3>Items</H3><P><DL><DT>[0] <I>int</I> : winerror<P>
+
+<DD>The windows error code.<P></DL>
+
+<DL><DT>[1] <I>string</I> : funcname<P>
+
+<DD>The name of the windows function that failed.<P></DL>
+
+<DL><DT>[2] <I>string</I> : strerror<P>
+
+<DD>The error message.<P></DL>
+
+
+    </div>
+  </body>
+</html>

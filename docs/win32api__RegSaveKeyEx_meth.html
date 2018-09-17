@@ -1,0 +1,58 @@
+
+<html>
+  <head>
+    <title>win32api__RegSaveKeyEx_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32api.html">win32api</a> &gt; <a href="RegSaveKeyEx">RegSaveKeyEx</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32api.html">win32api</A>.RegSaveKeyEx</H1><P>
+
+<B>RegSaveKeyEx(<I>Key</I><I>, File</I><I>, SecurityAttributes</I><I>, Flags</I></B>)<P>Extended version of RegSaveKey<P>
+
+<H3>Parameters</H3><P><DT><I>Key</I> : <A HREF="PyHKEY.html">PyHKEY</A><P>
+
+<DD>Handle to a registry key or one of HKEY_CURRENT_CONFIG, HKEY_CURRENT_USER<P><DT><I>File</I> : <A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>Name of file in which to save data.  File must not already exist.<P><DT><I>SecurityAttributes=None</I> : <A HREF="PySECURITY_ATTRIBUTES.html">PySECURITY_ATTRIBUTES</A><P>
+
+<DD>Specifies security for the file to be created<P>
+
+<DT><I>Flags=REG_LATEST_FORMAT</I> : int<P>
+
+<DD>One of REG_STANDARD_FORMAT,REG_LATEST_FORMAT,REG_NO_COMPRESSION (from winnt.py)<P>
+
+<H3>Comments</H3>
+
+Implemented only as Unicode (RegSaveKeyExW).  Accepts keyword arguments.<P>
+
+SE_BACKUP_NAME privilege must be enabled.<P>
+
+<H3>Win32 API References</H3><P><DT>Search for <i>RegSaveKeyEx</i> at <a href="http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegSaveKeyEx" target="_blank">msdn</a>, <a href="http://www.google.com/search?q=RegSaveKeyEx" target="_blank">google</a> or <a href="http://groups.google.com/groups?q=RegSaveKeyEx" target="_blank">google groups</a>.<P>
+
+
+    </div>
+  </body>
+</html>

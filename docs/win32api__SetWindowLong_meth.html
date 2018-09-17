@@ -1,0 +1,52 @@
+
+<html>
+  <head>
+    <title>win32api__SetWindowLong_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32api.html">win32api</a> &gt; <a href="SetWindowLong">SetWindowLong</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32api.html">win32api</A>.SetWindowLong</H1><P>
+
+int = <B>SetWindowLong(<I>hwnd</I><I>, offset</I>
+
+<I>, val</I>
+
+</B>)<P>Places a long value at the specified offset into the extra window memory of the given window.<P>
+
+<H3>Parameters</H3><P><DT><I>hwnd</I> : int<P>
+
+<DD>The handle to the window.<P><DT><I>offset</I> : int<P>
+
+<DD>Specifies the zero-based byte offset of the value to change. Valid values are in the range zero through the number of bytes of extra window memory, minus four (for example, if 12 or more bytes of extra memory were specified, a value of 8 would be an index to the third long integer), or one of the GWL_ constants.<P><DT><I>val</I> : int<P>
+
+<DD>Specifies the long value to place in the window's reserved memory.<P><H3>Comments</H3>
+
+This function calls the SetWindowLongPtr Api function<P>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+
+<html>
+  <head>
+    <title>win32print__DeletePrinterDriverEx_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32print.html">win32print</a> &gt; <a href="DeletePrinterDriverEx">DeletePrinterDriverEx</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32print.html">win32print</A>.DeletePrinterDriverEx</H1><P>
+
+<B>DeletePrinterDriverEx(<I>Server</I><I>, Environment</I><I>, DriverName</I><I>, DeleteFlag</I><I>, VersionFlag</I></B>)<P>Deletes a printer driver and its associated files<P>
+
+<H3>Parameters</H3><P><DT><I>Server</I> : string/<A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>Name of print server, use None for local machine<P><DT><I>Environment</I> : string/<A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>Environment - eg 'Windows NT x86' - use None for current client environment<P><DT><I>DriverName</I> : string/<A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>Name of driver to remove<P><DT><I>DeleteFlag</I> : int<P>
+
+<DD>Combination of DPD_DELETE_SPECIFIC_VERSION, DPD_DELETE_UNUSED_FILES, and DPD_DELETE_ALL_FILES<P><DT><I>VersionFlag</I> : int<P>
+
+<DD>Can be 0,1,2, or 3.  Only used if DPD_DELETE_SPECIFIC_VERSION is specified in DeleteFlag<P>
+    </div>
+  </body>
+</html>

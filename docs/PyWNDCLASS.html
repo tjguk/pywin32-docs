@@ -1,0 +1,110 @@
+
+<html>
+  <head>
+    <title>PyWNDCLASS Object</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_objects.html">Objects</a> &gt; <a href="PyWNDCLASS">PyWNDCLASS</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>PyWNDCLASS Object</H1><P>
+
+A Python object, representing an WNDCLASS structure<P>
+
+<H3>Comments</H3>
+
+Typically you create a PyWNDCLASS object, and set its properties. 
+
+The object can then be passed to any function which takes an WNDCLASS object<P>
+
+<H3>Properties</H3>
+
+<DL>
+
+<DT><B>integer style</B>
+
+<DD><P>
+
+
+
+<DT><B>integer cbWndExtra</B>
+
+<DD><P>
+
+
+
+<DT><B>integer hInstance</B>
+
+<DD><P>
+
+
+
+<DT><B>integer hIcon</B>
+
+<DD><P>
+
+
+
+<DT><B>integer hCursor</B>
+
+<DD><P>
+
+
+
+<DT><B>integer hbrBackground</B>
+
+<DD>These 3 handled manually in PyWNDCLASS::getattro/setattro.  The pymeth below is used as an 
+
+end tag, so these props will be lost if below it<P>
+
+
+
+<DT><B>string/<A HREF="PyUnicode.html">PyUnicode</A> lpszMenuName</B>
+
+<DD><P>
+
+
+
+<DT><B>string/<A HREF="PyUnicode.html">PyUnicode</A> lpszClassName</B>
+
+<DD><P>
+
+
+
+<DT><B>function lpfnWndProc</B>
+
+<DD><P>
+
+
+
+<H3>Methods</H3><P><DL><DT><A HREF="PyWNDCLASS__SetDialogProc_meth.html">SetDialogProc</A><BR>
+
+<DD>Sets the WNDCLASS to be for a dialog box.&nbsp;<P></DL>
+
+</DL>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+
+<html>
+  <head>
+    <title>win32gui__set_logger_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32gui.html">win32gui</a> &gt; <a href="set_logger">set_logger</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32gui.html">win32gui</A>.set_logger</H1><P>
+
+<B>set_logger(<I>logger</I></B>)<P>Sets a logger object for exceptions and error information<P>
+
+<H3>Parameters</H3><P><DT><I>logger</I> : object<P>
+
+<DD>A logger object, generally from the standard logger package.<P><H3>Comments</H3>
+
+Once a logger has been set for the module, unhandled exceptions, such as 
+
+from a window's WNDPROC, will be written (via logger.exception()) to the log 
+
+instead of to stderr. 
+
+<BR>Note that using this with the Python 2.3 logging package will prevent the 
+
+traceback from being written to the log.  However, it is possible to use 
+
+the Python 2.4 logging package directly with Python 2.3<P>
+
+
+    </div>
+  </body>
+</html>

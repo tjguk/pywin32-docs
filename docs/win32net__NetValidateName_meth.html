@@ -1,0 +1,62 @@
+
+<html>
+  <head>
+    <title>win32net__NetValidateName_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32net.html">win32net</a> &gt; <a href="NetValidateName">NetValidateName</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32net.html">win32net</A>.NetValidateName</H1><P>
+
+<B>NetValidateName(<I>Server</I><I>, Name</I><I>, NameType</I><I>, Account</I><I>, Password</I></B>)<P>Checks that domain/machine/workgroup name is valid for given context<P>
+
+<H3>Parameters</H3><P><DT><I>Server</I> : string/<A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>Name of server on which to execute (None or blank uses local)<P><DT><I>Name</I> : string/<A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>Machine, domain, or workgroup name to validate<P><DT><I>NameType</I> : int<P>
+
+<DD>Type of name to validate - from NETSETUP_NAME_TYPE enum (win32net.NetSetup*)<P><DT><I>Account=None</I> : string/<A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>Account name to use while validating, current security context is used if not specified<P>
+
+<DT><I>Password=None</I> : string/<A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>Password for Account<P>
+
+<H3>Comments</H3>
+
+If Account and Password aren't passed, current logon credentials are used<P>
+
+Will raise NotImplementedError if not available on this platform.<P>
+
+<H3>Return Value</H3>Returns none if valid, exception if not<P>
+
+
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+
+<html>
+  <head>
+    <title>SI_OBJECT_INFO Object</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="com.html">Python COM</a> &gt; <a href="com_objects.html">Objects</a> &gt; <a href="SI_OBJECT_INFO">SI_OBJECT_INFO</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>SI_OBJECT_INFO Object</H1><P>
+
+Six-tuple representing SI_OBJECT_INFO struct<P>
+
+<H3>Items</H3><P><DL><DT>[0] <I>int</I> : Flags<P>
+
+<DD>Combination of ntsecuritycon.SI_* flags specifying options<P></DL>
+
+<DL><DT>[1] <I><A HREF="PyHANDLE.html">PyHANDLE</A></I> : hInstance<P>
+
+<DD>Handle to a module containing string resources (not supported yet, use 0)<P></DL>
+
+<DL><DT>[2] <I><A HREF="PyUNICODE.html">PyUNICODE</A></I> : ServerName<P>
+
+<DD>Name of authenticating server if not local machine<P></DL>
+
+<DL><DT>[3] <I><A HREF="PyUNICODE.html">PyUNICODE</A></I> : ObjectName<P>
+
+<DD>Name of object whose security will be displayed<P></DL>
+
+<DL><DT>[4] <I><A HREF="PyUNICODE.html">PyUNICODE</A></I> : PageTitle<P>
+
+<DD>Title to be used for basic propery sheet (SI_PAGE_TITLE must be passed in Flags)<P></DL>
+
+<DL><DT>[5] <I><A HREF="PyIID.html">PyIID</A></I> : ObjectType<P>
+
+<DD>GUID identifying the type of object, usually IID_NULL<P></DL>
+
+
+    </div>
+  </body>
+</html>

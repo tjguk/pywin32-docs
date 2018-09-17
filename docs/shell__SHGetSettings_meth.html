@@ -1,0 +1,58 @@
+
+<html>
+  <head>
+    <title>shell__SHGetSettings_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="com.html">Python COM</a> &gt; <a href="com_modules.html">Modules</a> &gt; <a href="shell.html">shell</a> &gt; <a href="SHGetSettings">SHGetSettings</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="shell.html">shell</A>.SHGetSettings</H1><P>
+
+dict = <B>SHGetSettings(<I>mask</I></B>)<P>Retrieves the current shell option settings.<P>
+
+<H3>Parameters</H3><P><DT><I>mask=-1</I> : int<P>
+
+<DD>The values being requested - one of the shellcon.SSF_* constants<P>
+
+<H3>Comments</H3>
+
+This method is only available in shell version 4.71.  If the 
+
+function is not available, a COM Exception with HRESULT=E_NOTIMPL 
+
+will be raised.<P>
+
+<H3>Return Value</H3>The result is a dictionary, the contents of which depend on 
+
+the mask param.  Key names are the same as the SHELLFLAGSTATE 
+
+structure members - 'fShowExtensions', 'fNoConfirmRecycle', etc<P>
+
+
+
+
+    </div>
+  </body>
+</html>

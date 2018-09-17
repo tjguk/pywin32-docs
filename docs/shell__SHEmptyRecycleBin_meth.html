@@ -1,0 +1,48 @@
+
+<html>
+  <head>
+    <title>shell__SHEmptyRecycleBin_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="com.html">Python COM</a> &gt; <a href="com_modules.html">Modules</a> &gt; <a href="shell.html">shell</a> &gt; <a href="SHEmptyRecycleBin">SHEmptyRecycleBin</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="shell.html">shell</A>.SHEmptyRecycleBin</H1><P>
+
+<B>SHEmptyRecycleBin(<I>hwnd</I><I>, path</I><I>, flags</I></B>)<P>Empties the recycle bin on the specified drive.<P>
+
+<H3>Parameters</H3><P><DT><I>hwnd</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>Handle to parent window, can be None<P><DT><I>path</I> : string<P>
+
+<DD>A NULL-terminated string that contains the path of the root drive on which the recycle bin is located. This parameter can contain the address of a string formatted with the drive, folder, and subfolder names (c:\\windows\\system . . .). It can also contain an empty string or NULL. If this value is an empty string or NULL, all recycle bins on all drives will be emptied.<P><DT><I>flags</I> : int<P>
+
+<DD>One of the SHERB_* values.<P><H3>Comments</H3>
+
+This method is only available in shell version 4.71.  If the function is not available, a COM Exception with HRESULT=E_NOTIMPL will be raised.<P>
+
+
+    </div>
+  </body>
+</html>

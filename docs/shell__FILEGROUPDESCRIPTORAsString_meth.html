@@ -1,0 +1,60 @@
+
+<html>
+  <head>
+    <title>shell__FILEGROUPDESCRIPTORAsString_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="com.html">Python COM</a> &gt; <a href="com_modules.html">Modules</a> &gt; <a href="shell.html">shell</a> &gt; <a href="FILEGROUPDESCRIPTORAsString">FILEGROUPDESCRIPTORAsString</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="shell.html">shell</A>.FILEGROUPDESCRIPTORAsString</H1><P>
+
+string = <B>FILEGROUPDESCRIPTORAsString(<I>descriptors</I><I>, make_unicode</I>
+
+</B>)<P>Creates a FILEGROUPDESCRIPTOR from a sequence of mapping objects, each with FILEDESCRIPTOR attributes<P>
+
+<H3>Parameters</H3><P><DT><I>descriptors</I> : [FILEDESCRIPTOR, ...]<P>
+
+<DD>A sequence of FILEDESCRIPTOR objects. 
+
+Each filedescriptor object must be a mapping/dictionary, with the following 
+
+optional attributes: dwFlags, clsid, sizel, pointl, dwFileAttributes, 
+
+ftCreationTime, ftLastAccessTime, ftLastWriteTime, nFileSize 
+
+If these attributes do not exist, or are None, they will be ignored - hence 
+
+you only need specify attributes you care about. 
+
+<BR>In general, you can omit dwFlags - it will be set correctly based 
+
+on what other attributes exist.<P><DT><I>make_unicode=False on py2k, True on py3k</I> : bool<P>
+
+<DD>If true, a FILEDESCRIPTORW object is created<P>
+
+
+    </div>
+  </body>
+</html>

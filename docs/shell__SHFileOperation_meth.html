@@ -1,0 +1,52 @@
+
+<html>
+  <head>
+    <title>shell__SHFileOperation_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="com.html">Python COM</a> &gt; <a href="com_modules.html">Modules</a> &gt; <a href="shell.html">shell</a> &gt; <a href="SHFileOperation">SHFileOperation</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="shell.html">shell</A>.SHFileOperation</H1><P>
+
+int, int = <B>SHFileOperation(<I>operation</I></B>)<P>Copies, moves, renames, or deletes a file system object.<P>
+
+<H3>Parameters</H3><P><DT><I>operation</I> : <A HREF="SHFILEOPSTRUCT.html">SHFILEOPSTRUCT</A><P>
+
+<DD>Defines the operation to perform.<P><H3>Return Value</H3>The result is a tuple containing int result of the function itself, and the result of the 
+
+fAnyOperationsAborted member after the operation.  If Flags contains FOF_WANTMAPPINGHANDLE, 
+
+returned tuple will have a 3rd member containing a sequence of 2-tuples with the old and new file names 
+
+of renamed files.  This will only have any content if FOF_RENAMEONCOLLISION was specified, and some 
+
+filename conflicts actually occurred.<P>
+
+
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+
+<html>
+  <head>
+    <title>win32crypt__CertAddSerializedElementToStore_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32crypt.html">win32crypt</a> &gt; <a href="CertAddSerializedElementToStore">CertAddSerializedElementToStore</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32crypt.html">win32crypt</A>.CertAddSerializedElementToStore</H1><P>
+
+<A HREF="PyCERT_CONTEXT.html">PyCERT_CONTEXT</A> = <B>CertAddSerializedElementToStore(<I>CertStore</I><I>, Element</I>
+
+<I>, AddDisposition</I>
+
+<I>, ContextTypeFlags</I>
+
+<I>, Flags</I>
+
+</B>)<P>Imports a serialized Certificate context, CRL, or CTL<P>
+
+<H3>Parameters</H3><P><DT><I>CertStore</I> : <A HREF="PyCERTSTORE.html">PyCERTSTORE</A><P>
+
+<DD>Certificate Store to which the context will be added, can be None<P><DT><I>Element</I> : buffer<P>
+
+<DD>Serialized data<P><DT><I>AddDisposition</I> : int<P>
+
+<DD>one of CERT_STORE_ADD_* values<P><DT><I>ContextTypeFlags=CERT_STORE_CERTIFICATE_CONTEXT_FLAG</I> : int<P>
+
+<DD>One of CERT_STORE_*_CONTEXT_FLAG constants<P>
+
+<DT><I>Flags=0</I> : int<P>
+
+<DD>Reserved, use only 0<P>
+
+<H3>Comments</H3>
+
+Currently only Certificate contexts are supported<P>
+
+
+    </div>
+  </body>
+</html>

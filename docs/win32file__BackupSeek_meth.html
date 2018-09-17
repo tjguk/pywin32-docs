@@ -1,0 +1,56 @@
+
+<html>
+  <head>
+    <title>win32file__BackupSeek_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32file.html">win32file</a> &gt; <a href="BackupSeek">BackupSeek</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32file.html">win32file</A>.BackupSeek</H1><P>
+
+long = <B>BackupSeek(<I>hFile</I><I>, NumberOfBytesToSeek</I>
+
+<I>, lpContext</I>
+
+</B>)<P>Seeks forward in a file stream<P>
+
+<H3>Parameters</H3><P><DT><I>hFile</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>File handle used by a BackupRead operation<P><DT><I>NumberOfBytesToSeek</I> : long<P>
+
+<DD>Number of bytes to move forward in current stream<P><DT><I>lpContext</I> : int<P>
+
+<DD>Context pointer returned from a BackupRead operation<P><H3>Comments</H3>
+
+Function will only seek to end of current stream, used to seek past bad data 
+
+or find beginning position for read of next stream 
+
+Returns number of bytes actually moved<P>
+
+
+    </div>
+  </body>
+</html>

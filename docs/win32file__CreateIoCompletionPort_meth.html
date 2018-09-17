@@ -1,0 +1,58 @@
+
+<html>
+  <head>
+    <title>win32file__CreateIoCompletionPort_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32file.html">win32file</a> &gt; <a href="CreateIoCompletionPort">CreateIoCompletionPort</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32file.html">win32file</A>.CreateIoCompletionPort</H1><P>
+
+<A HREF="PyHANDLE.html">PyHANDLE</A> = <B>CreateIoCompletionPort(<I>handle</I><I>, existing</I>
+
+<I>, completionKey</I>
+
+<I>, numThreads</I>
+
+</B>)<P>Can associate an instance of an opened file with a newly created or an existing input/output (I/O) completion port; or it can create an I/O completion port without associating it with a file.<P>
+
+<H3>Parameters</H3><P><DT><I>handle</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>file handle to associate with the I/O completion port<P><DT><I>existing</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>handle to the I/O completion port<P><DT><I>completionKey</I> : int<P>
+
+<DD>per-file completion key for I/O completion packets<P><DT><I>numThreads</I> : int<P>
+
+<DD>number of threads allowed to execute concurrently<P><H3>Return Value</H3>If an existing handle to a completion port is passed, the result 
+
+of this function will be that same handle.  See MSDN for more details.<P>
+
+
+
+
+    </div>
+  </body>
+</html>

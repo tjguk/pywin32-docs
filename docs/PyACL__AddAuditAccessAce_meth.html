@@ -1,0 +1,48 @@
+
+<html>
+  <head>
+    <title>PyACL__AddAuditAccessAce_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | 
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="PyACL.html">PyACL</A>.AddAuditAccessAce</H1><P>
+
+<B>AddAuditAccessAce(<I>dwAceRevision</I><I>, dwAccessMask</I><I>, sid</I><I>, bAuditSuccess</I><I>, bAuditFailure</I></B>)<P>Adds an audit ACE to a Sacl<P>
+
+<H3>Parameters</H3><P><DT><I>dwAceRevision</I> : int<P>
+
+<DD>Revision of ACL: Pre-Win2k, must be ACL_REVISION. Win2K on up, can also be ACL_REVISION_DS<P><DT><I>dwAccessMask</I> : int<P>
+
+<DD>Bitmask of access types to be audited<P><DT><I>sid</I> : <A HREF="PySID.html">PySID</A><P>
+
+<DD>SID for whom system audit messages will be generated<P><DT><I>bAuditSuccess</I> : int<P>
+
+<DD>Set to 1 if access success should be audited, else 0<P><DT><I>bAuditFailure</I> : int<P>
+
+<DD>Set to 1 if access failure should be audited, else 0<P>
+    </div>
+  </body>
+</html>

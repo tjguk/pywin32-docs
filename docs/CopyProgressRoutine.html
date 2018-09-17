@@ -1,0 +1,54 @@
+
+<html>
+  <head>
+    <title>CopyProgressRoutine Object</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_objects.html">Objects</a> &gt; <a href="CopyProgressRoutine">CopyProgressRoutine</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>CopyProgressRoutine Object</H1><P>
+
+Python function used as a callback for <A HREF="win32file__CopyFileEx_meth.html">win32file::CopyFileEx</A> and <A HREF="win32file__MoveFileWithProgress_meth.html">win32file::MoveFileWithProgress</A><BR> 
+
+Function will receive 9 parameters:<BR> 
+
+(TotalFileSize, TotalBytesTransferred, StreamSize, StreamBytesTransferred, 
+
+StreamNumber, CallbackReason, SourceFile, DestinationFile, Data)<BR> 
+
+SourceFile and DestinationFile are <A HREF="PyHANDLE.html">PyHANDLE</A>s. 
+
+Data is the context object passed to the calling function. 
+
+All others are longs.<BR> 
+
+CallbackReason will be one of CALLBACK_CHUNK_FINISHED or CALLBACK_STREAM_SWITCH<BR> 
+
+Your implementation of this function must return one of the PROGRESS_* constants.<P>
+
+
+    </div>
+  </body>
+</html>

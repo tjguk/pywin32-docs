@@ -1,0 +1,146 @@
+
+<html>
+  <head>
+    <title>PyTime Object</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_objects.html">Objects</a> &gt; <a href="PyTime">PyTime</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>PyTime Object</H1><P>
+
+A Python object, representing an instant in time.<P>
+
+<H3>Comments</H3>
+
+A PyTime object is used primarily when exchanging date/time information 
+
+with COM objects or other win32 functions. 
+
+<BR>Using int(timeObject) will return an integer compatible with 
+
+the standard Python time module.<P>
+
+<H3>Example</H3>First import the time module<P>
+
+<PRE>import time
+
+</PRE>
+
+To return a simple string<P>
+
+<PRE>time.ctime(int(timeObject))
+
+</PRE>
+
+To return a string formatted as the long date in control panel<P>
+
+<PRE>time.strftime("%#c", time.localtime(int(timeObject)))
+
+</PRE>
+
+<H3>See Also</H3><P><DT><A HREF="pywintypes__Time_meth.html">pywintypes::Time</A><P>
+
+<H3>Methods</H3><P><DL><DT><A HREF="PyTime__Format_meth.html">Format</A><BR>
+
+<DD>Formats the time value&nbsp;<P><DT><A HREF="PyTime____int___meth.html">__int__</A><BR>
+
+<DD>Used when an integer representation of the time object is required.&nbsp;<P><DT><A HREF="PyTime____float___meth.html">__float__</A><BR>
+
+<DD>Used when a floating point representation of the time object is required.&nbsp;<P><DT><A HREF="PyTime____cmp___meth.html">__cmp__</A><BR>
+
+<DD>Used when time objects are compared. 
+
+tp_compare&nbsp;<P><DT><A HREF="PyTime____repr___meth.html">__repr__</A><BR>
+
+<DD>Used for repr(ob) 
+
+tp_repr&nbsp;<P><DT><A HREF="PyTime____hash___meth.html">__hash__</A><BR>
+
+<DD>Used when the hash value of an time object is required 
+
+tp_hash&nbsp;<P><DT><A HREF="PyTime____str___meth.html">__str__</A><BR>
+
+<DD>Used for str(ob) 
+
+tp_str&nbsp;<P></DL>
+
+<H3>Properties</H3>
+
+<DL>
+
+<DT><B>int year</B>
+
+<DD><P>
+
+
+
+<DT><B>int month</B>
+
+<DD><P>
+
+
+
+<DT><B>int weekday</B>
+
+<DD><P>
+
+
+
+<DT><B>int day</B>
+
+<DD><P>
+
+
+
+<DT><B>int hour</B>
+
+<DD><P>
+
+
+
+<DT><B>int minute</B>
+
+<DD><P>
+
+
+
+<DT><B>int second</B>
+
+<DD><P>
+
+
+
+<DT><B>int msec</B>
+
+<DD><P>
+
+
+
+</DL>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+
+<html>
+  <head>
+    <title>win32file__GetVolumePathName_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32file.html">win32file</a> &gt; <a href="GetVolumePathName">GetVolumePathName</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32file.html">win32file</A>.GetVolumePathName</H1><P>
+
+<A HREF="PyUnicode.html">PyUnicode</A> = <B>GetVolumePathName(<I>FileName</I><I>, BufferLength</I>
+
+</B>)<P>Returns volume mount point for a path<P>
+
+<H3>Parameters</H3><P><DT><I>FileName</I> : <A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>File/dir for which to return volume mount point<P><DT><I>BufferLength=0</I> : int<P>
+
+<DD>Optional parm to allocate extra space for returned string<P>
+
+<H3>Comments</H3>
+
+Api gives no indication of how much memory is needed, so function assumes returned path 
+
+will not be longer that length of input path + 1. 
+
+Use GetFullPathName first for relative paths, or GetLongPathName for 8.3 paths. 
+
+Optional second parm can also be used to override the buffer size for returned path<P>
+
+Accepts keyword args.<P>
+
+
+    </div>
+  </body>
+</html>

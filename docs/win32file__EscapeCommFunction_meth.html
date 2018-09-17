@@ -1,0 +1,76 @@
+
+<html>
+  <head>
+    <title>win32file__EscapeCommFunction_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32file.html">win32file</a> &gt; <a href="EscapeCommFunction">EscapeCommFunction</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32file.html">win32file</A>.EscapeCommFunction</H1><P>
+
+<B>EscapeCommFunction(<I>handle</I></B>)<P>directs a specified communications device to perform an extended function.<P>
+
+<H3>Parameters</H3><P><DT><I>handle</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>The handle to the communications device.<P><P><TABLE COLS=2 WIDTH="100%" CELLSPACING=15>
+
+<TR>
+
+   <TD>
+
+       <B>Value</B>
+
+   </TD>
+
+   <TD>
+
+       <B>Meaning</B>
+
+   </TD>
+
+</TR>
+
+<TR><TD></TD><TD></TD></TR>
+
+<TR><TD>CLRDTR</TD><TD>Clears the DTR (data-terminal-ready) signal.</TD></TR>
+
+<TR><TD>CLRRTS</TD><TD>Clears the RTS (request-to-send) signal.</TD></TR>
+
+<TR><TD>SETDTR</TD><TD>Sends the DTR (data-terminal-ready) signal.</TD></TR>
+
+<TR><TD>SETRTS</TD><TD>Sends the RTS (request-to-send) signal.</TD></TR>
+
+<TR><TD>SETXOFF</TD><TD>Causes transmission to act as if an XOFF character has been received.</TD></TR>
+
+<TR><TD>SETXON</TD><TD>Causes transmission to act as if an XON character has been received.</TD></TR>
+
+<TR><TD>SETBREAK</TD><TD>Suspends character transmission and places the transmission line in a break state until the ClearCommBreak function is called (or EscapeCommFunction is called with the CLRBREAK extended function code). The SETBREAK extended function code is identical to the SetCommBreak function. Note that this extended function does not flush data that has not been transmitted.</TD></TR>
+
+<TR><TD>CLRBREAK</TD><TD>Restores character transmission and places the transmission line in a nonbreak state. The CLRBREAK extended function code is identical to the ClearCommBreak function.</TD></TR>
+
+</TABLE>
+    </div>
+  </body>
+</html>

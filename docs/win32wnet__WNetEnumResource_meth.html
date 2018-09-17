@@ -1,0 +1,64 @@
+
+<html>
+  <head>
+    <title>win32wnet__WNetEnumResource_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32wnet.html">win32wnet</a> &gt; <a href="WNetEnumResource">WNetEnumResource</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32wnet.html">win32wnet</A>.WNetEnumResource</H1><P>
+
+[<A HREF="PyNETRESOURCE.html">PyNETRESOURCE</A>, ...] = <B>WNetEnumResource(<I>handle</I><I>, maxExtries</I>
+
+</B>)<P>Enumerates a list of resources<P>
+
+<H3>Parameters</H3><P><DT><I>handle</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>A handle to an open Enumeration Object (from <A HREF="win32wnet__WNetOpenEnum_meth.html">win32wnet::WNetOpenEnum</A>)<P><DT><I>maxExtries=64</I> : int<P>
+
+<DD>The maximum number of entries to return. 
+
+enforce the PyHANDLEType, Count is optional<P>
+
+<H3>Comments</H3>
+
+Successive calls to win32wnet.WNetEnumResource will enumerate starting where the previous call 
+
+stopped. That is, the enumeration is not reset on successive calls UNLESS the enumeration handle is 
+
+closed and reopened.  This lets you process an enumeration in small chunks (as small as 1 item at a time) 
+
+and still fully enumerate a network object!<P>
+
+<H3>Return Value</H3>The list contains PyNETRESOURCE entries. The total number of PyNETRESOURCE entries will be &lt;= number 
+
+requested (excepting the default behavior of requesting 0, which returns up to 64)<P>
+
+
+
+
+    </div>
+  </body>
+</html>

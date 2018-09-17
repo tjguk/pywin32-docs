@@ -1,0 +1,72 @@
+
+<html>
+  <head>
+    <title>PySECURITY_ATTRIBUTES Object</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_objects.html">Objects</a> &gt; <a href="PySECURITY_ATTRIBUTES">PySECURITY_ATTRIBUTES</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>PySECURITY_ATTRIBUTES Object</H1><P>
+
+A Python object, representing a SECURITY_ATTRIBUTES structure<P>
+
+<H3>Properties</H3>
+
+<DL>
+
+<DT><B>boolean bInheritHandle</B>
+
+<DD>Specifies whether the returned handle is inherited when a new process is created. If this member is TRUE, the new process inherits the handle.<P>
+
+
+
+<DT><B><A HREF="PySECURITY_DESCRIPTOR.html">PySECURITY_DESCRIPTOR</A> SECURITY_DESCRIPTOR</B>
+
+<DD>A PySECURITY_DESCRIPTOR, or None<P>
+
+
+
+</DL>
+
+<H3>Comments</H3>
+
+On platforms that support security descriptor operations, SECURITY_DESCRIPTOR 
+
+defaults to a blank security descriptor with no owner, group, dacl, or sacl. 
+
+Set to None to use a NULL security descriptor instead. 
+
+When PySECURITY_ATTRIBUTES is created on Windows 95/98/Me, SECURITY_DESCRIPTOR defaults 
+
+to None and should not be changed. 
+
+When SECURITY_DESCRIPTOR is not None, any of its methods can be invoked directly 
+
+on the PySECURITY_ATTRIBUTES object<P>
+
+
+    </div>
+  </body>
+</html>

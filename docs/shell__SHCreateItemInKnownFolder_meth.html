@@ -1,0 +1,60 @@
+
+<html>
+  <head>
+    <title>shell__SHCreateItemInKnownFolder_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="com.html">Python COM</a> &gt; <a href="com_modules.html">Modules</a> &gt; <a href="shell.html">shell</a> &gt; <a href="SHCreateItemInKnownFolder">SHCreateItemInKnownFolder</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="shell.html">shell</A>.SHCreateItemInKnownFolder</H1><P>
+
+<A HREF="PyIShellItem.html">PyIShellItem</A> = <B>SHCreateItemInKnownFolder(<I>FolderId</I><I>, Flags</I>
+
+<I>, Name</I>
+
+<I>, riid</I>
+
+</B>)<P>Creates a Shell item object for a single file that exists inside a known folder.<P>
+
+<H3>Parameters</H3><P><DT><I>FolderId</I> : <A HREF="PyIID.html">PyIID</A><P>
+
+<DD>The GUID of a known folder (shell.FOLDERID_*)<P><DT><I>Flags</I> : int<P>
+
+<DD>Combination of shellcon.KF_FLAG_* flags controlling how folder is handled<P><DT><I>Name</I> : str<P>
+
+<DD>Name of an item in the folder.  Pass None to bind to the known folder itself.<P><DT><I>riid=IID_IShellItem</I> : <A HREF="PyIID.html">PyIID</A><P>
+
+<DD>The interface to return, usually IID_IShellItem or IID_IShellItem2<P>
+
+<H3>Comments</H3>
+
+This function is only available on Vista and later; a 
+
+COM exception with E_NOTIMPL will be thrown if the function can't be located.<P>
+
+
+    </div>
+  </body>
+</html>

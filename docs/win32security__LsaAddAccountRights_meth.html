@@ -1,0 +1,50 @@
+
+<html>
+  <head>
+    <title>win32security__LsaAddAccountRights_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32security.html">win32security</a> &gt; <a href="LsaAddAccountRights">LsaAddAccountRights</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32security.html">win32security</A>.LsaAddAccountRights</H1><P>
+
+<B>LsaAddAccountRights(<I>PolicyHandle</I><I>, AccountSid</I><I>, UserRights</I></B>)<P>Adds a list of privileges to an account<P>
+
+<H3>Parameters</H3><P><DT><I>PolicyHandle</I> : <A HREF="PyLSA_HANDLE.html">PyLSA_HANDLE</A><P>
+
+<DD>An LSA policy handle as returned by <A HREF="win32security__LsaOpenPolicy_meth.html">win32security::LsaOpenPolicy</A><P><DT><I>AccountSid</I> : <A HREF="PySID.html">PySID</A><P>
+
+<DD>Account to which privs will be added<P><DT><I>UserRights</I> : (str/unicode,...)<P>
+
+<DD>Sequence of privilege names (SE_*_NAME unicode constants)<P><H3>Comments</H3>
+
+Account is created if it doesn't already exist.<P>
+
+Accepts keyword args.<P>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+
+<html>
+  <head>
+    <title>CREATE_SEPARATE_WOW_VDM</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_constants.html">Constants</a> &gt; <a href="CREATE_SEPARATE_WOW_VDM">CREATE_SEPARATE_WOW_VDM</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>CREATE_SEPARATE_WOW_VDM</H1>
+
+<B>const win32process.CREATE_SEPARATE_WOW_VDM;</B><P>
+
+Windows NT: This flag is valid only when starting a 16-bit Windows-based application. If set, the new process is run in a private Virtual DOS Machine (VDM). By default, all 16-bit Windows-based applications are run as threads in a single, shared VDM. The advantage of running separately is that a crash only kills the single VDM; any other programs running in distinct VDMs continue to function normally. Also, 16-bit Windows-based applications that are run in separate VDMs have separate input queues. That means that if one application hangs momentarily, applications in separate VDMs continue to receive input. The disadvantage of running separately is that it takes significantly more memory to do so. You should use this flag only if the user requests that 16-bit applications should run in them own VDM.<P>
+
+
+    </div>
+  </body>
+</html>

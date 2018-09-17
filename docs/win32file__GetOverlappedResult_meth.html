@@ -1,0 +1,52 @@
+
+<html>
+  <head>
+    <title>win32file__GetOverlappedResult_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32file.html">win32file</a> &gt; <a href="GetOverlappedResult">GetOverlappedResult</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32file.html">win32file</A>.GetOverlappedResult</H1><P>
+
+int = <B>GetOverlappedResult(<I>hFile</I><I>, overlapped</I>
+
+<I>, bWait</I>
+
+</B>)<P>Determines the result of the most recent call with an OVERLAPPED object.<P>
+
+<H3>Parameters</H3><P><DT><I>hFile</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>The handle to the pipe or file<P><DT><I>overlapped</I> : <A HREF="PyOVERLAPPED.html">PyOVERLAPPED</A><P>
+
+<DD>The overlapped object to check.<P><DT><I>bWait</I> : int<P>
+
+<DD>Indicates if the function should wait for data to become available.<P><H3>Comments</H3>
+
+The result is the number of bytes transferred.  The overlapped object's attributes will be changed during this call.<P>
+
+
+    </div>
+  </body>
+</html>

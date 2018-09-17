@@ -1,0 +1,66 @@
+
+<html>
+  <head>
+    <title>shell__SHCreateStreamOnFileEx_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="com.html">Python COM</a> &gt; <a href="com_modules.html">Modules</a> &gt; <a href="shell.html">shell</a> &gt; <a href="SHCreateStreamOnFileEx">SHCreateStreamOnFileEx</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="shell.html">shell</A>.SHCreateStreamOnFileEx</H1><P>
+
+<A HREF="PyIStream.html">PyIStream</A> = <B>SHCreateStreamOnFileEx(<I>File</I><I>, Mode</I>
+
+<I>, Attributes</I>
+
+<I>, Create</I>
+
+<I>, Template</I>
+
+</B>)<P>Creates an IStream interface that reads and writes to a file<P>
+
+<H3>Parameters</H3><P><DT><I>File</I> : str<P>
+
+<DD>Name of file to be connected to the stream<P><DT><I>Mode</I> : int<P>
+
+<DD>Combination of storagecon.STGM_* flags specifying the access mode<P><DT><I>Attributes</I> : int<P>
+
+<DD>Combination of win32con.FILE_ATTRIBUTE_* flags<P><DT><I>Create</I> : bool<P>
+
+<DD>Determines if function should fail when file exists (see MSDN docs for full explanation)<P><DT><I>Template=None</I> : None<P>
+
+<DD>Reserved, use only None<P>
+
+<H3>Comments</H3>
+
+Accepts keyword args.<P>
+
+This function is only available on WinXP and later. 
+
+COM exception with E_NOTIMPL will be thrown if the function can't be located.<P>
+
+
+    </div>
+  </body>
+</html>

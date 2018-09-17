@@ -1,0 +1,62 @@
+
+<html>
+  <head>
+    <title>win32file__SetVolumeMountPoint_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32file.html">win32file</a> &gt; <a href="SetVolumeMountPoint">SetVolumeMountPoint</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32file.html">win32file</A>.SetVolumeMountPoint</H1><P>
+
+<A HREF="PyUnicode.html">PyUnicode</A> = <B>SetVolumeMountPoint(<I>VolumeMountPoint</I><I>, VolumeName</I>
+
+</B>)<P>Mounts the specified volume at the specified volume mount point.<P>
+
+<H3>Parameters</H3><P><DT><I>VolumeMountPoint</I> : <A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>The mount point - must be an existing empty directory on an NTFS volume<P><DT><I>VolumeName</I> : <A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>The volume to&#09;mount there<P><H3>Comments</H3>
+
+Accepts keyword args.<P>
+
+Note that both&#09;parameters must&#09;have trailing backslashes.<P>
+
+This method exists only on Windows 2000 or later.  On earlier platforms, NotImplementedError will be raised.<P>
+
+<H3>Example</H3>Usage<P>
+
+<PRE>SetVolumeMountPoint('h:\\tmp\\','c:\\')
+
+</PRE>
+
+<H3>Return Value</H3>The result is&#09;the&#09;GUID of&#09;the&#09;volume mounted,&#09;as a string.<P>
+
+
+
+
+    </div>
+  </body>
+</html>

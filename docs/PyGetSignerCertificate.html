@@ -1,0 +1,56 @@
+
+<html>
+  <head>
+    <title>PyGetSignerCertificate Object</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_objects.html">Objects</a> &gt; <a href="PyGetSignerCertificate">PyGetSignerCertificate</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>PyGetSignerCertificate Object</H1><P>
+
+Callback used with CRYPT_VERIFY_MESSAGE_PARA to locate a certficate by issuer and serial nbr. 
+
+This function will receive 4 args: 
+
+1. Arbitrary context object given as GetArg in <B>CRYPT_VERIFY_MESSAGE_PARA</B>
+
+ 
+
+2. CertEncodingType (int) -  specifies the type of encoding used 
+
+3. SignerId - Dict containing issuer and serial nbr that uniquely identifies a certificate 
+
+4. <A HREF="PyCERTSTORE.html">PyCERTSTORE</A> containing certificates extracted from the message 
+
+Function must return a <A HREF="PyCERT_CONTEXT.html">PyCERT_CONTEXT</A>.  If no certificate could be found, it should raise 
+
+pywintypes.error(winerror.CRYPT_E_NO_MATCH) 
+
+If this function is not specified, the default action is to locate a certificate encoded in the message.<P>
+
+
+    </div>
+  </body>
+</html>

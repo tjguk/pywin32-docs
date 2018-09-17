@@ -1,0 +1,54 @@
+
+<html>
+  <head>
+    <title>shell__SHCreateItemFromParsingName_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="com.html">Python COM</a> &gt; <a href="com_modules.html">Modules</a> &gt; <a href="shell.html">shell</a> &gt; <a href="SHCreateItemFromParsingName">SHCreateItemFromParsingName</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="shell.html">shell</A>.SHCreateItemFromParsingName</H1><P>
+
+<A HREF="PyIShellItem.html">PyIShellItem</A> = <B>SHCreateItemFromParsingName(<I>name</I><I>, ctx</I>
+
+<I>, riid</I>
+
+</B>)<P>Creates and initializes a Shell item object from a parsing name.<P>
+
+<H3>Parameters</H3><P><DT><I>name</I> : str<P>
+
+<DD>The display name of the item to create, eg a file path<P><DT><I>ctx</I> : <A HREF="PyIBindCtx.html">PyIBindCtx</A><P>
+
+<DD>Bind context, can be None<P><DT><I>riid</I> : <A HREF="PyIID.html">PyIID</A><P>
+
+<DD>The interface to create, IID_IShellItem or IID_IShellItem2<P><H3>Comments</H3>
+
+This function is only available on Vista and later; a 
+
+COM exception with E_NOTIMPL will be thrown if the function can't be located.<P>
+
+
+    </div>
+  </body>
+</html>

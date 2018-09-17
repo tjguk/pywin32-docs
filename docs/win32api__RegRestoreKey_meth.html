@@ -1,0 +1,54 @@
+
+<html>
+  <head>
+    <title>win32api__RegRestoreKey_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32api.html">win32api</a> &gt; <a href="RegRestoreKey">RegRestoreKey</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32api.html">win32api</A>.RegRestoreKey</H1><P>
+
+<B>RegRestoreKey(<I>Key</I><I>, File</I><I>, Flags</I></B>)<P>Restores a key and subkeys from a saved registry file<P>
+
+<H3>Parameters</H3><P><DT><I>Key</I> : <A HREF="PyHKEY.html">PyHKEY</A><P>
+
+<DD>Handle to registry key to be restored.  Can also be one of win32con.HKEY_* values.<P><DT><I>File</I> : <A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>File from which to restore registry data<P><DT><I>Flags=0</I> : int<P>
+
+<DD>One of REG_FORCE_RESTORE,REG_NO_LAZY_FLUSH,REG_REFRESH_HIVE,REG_WHOLE_HIVE_VOLATILE (from winnt)<P>
+
+<H3>Comments</H3>
+
+Implemented only as Unicode (RegRestoreKeyW).  Accepts keyword arguments.<P>
+
+Requires SeBackupPrivilege and SeRestorePrivilege<P>
+
+<H3>Win32 API References</H3><P><DT>Search for <i>RegRestoreKey</i> at <a href="http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegRestoreKey" target="_blank">msdn</a>, <a href="http://www.google.com/search?q=RegRestoreKey" target="_blank">google</a> or <a href="http://groups.google.com/groups?q=RegRestoreKey" target="_blank">google groups</a>.<P>
+
+
+    </div>
+  </body>
+</html>

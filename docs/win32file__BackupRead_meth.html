@@ -1,0 +1,68 @@
+
+<html>
+  <head>
+    <title>win32file__BackupRead_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32file.html">win32file</a> &gt; <a href="BackupRead">BackupRead</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32file.html">win32file</A>.BackupRead</H1><P>
+
+(int, buffer, int) = <B>BackupRead(<I>hFile</I><I>, NumberOfBytesToRead</I>
+
+<I>, Buffer</I>
+
+<I>, bAbort</I>
+
+<I>, bProcessSecurity</I>
+
+<I>, lpContext</I>
+
+</B>)<P>Reads streams of data from a file<P>
+
+<H3>Parameters</H3><P><DT><I>hFile</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>File handle opened by CreateFile<P><DT><I>NumberOfBytesToRead</I> : int<P>
+
+<DD>Number of bytes to be read from file<P><DT><I>Buffer</I> : buffer<P>
+
+<DD>Writeable buffer object that receives data read<P><DT><I>bAbort</I> : int<P>
+
+<DD>If true, ends read operation and frees backup context<P><DT><I>bProcessSecurity</I> : int<P>
+
+<DD>Indicates whether file's ACL stream should be read<P><DT><I>lpContext</I> : int<P>
+
+<DD>Pass 0 on first call, then pass back value returned from last call thereafter<P><H3>Comments</H3>
+
+Returns number of bytes read, data buffer, and context pointer for next operation 
+
+If Buffer is None, a new buffer will be created of size NbrOfBytesToRead that can be passed 
+
+back in subsequent calls<P>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+
+<html>
+  <head>
+    <title>win32gui__SetWindowLong_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32gui.html">win32gui</a> &gt; <a href="SetWindowLong">SetWindowLong</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32gui.html">win32gui</A>.SetWindowLong</H1><P>
+
+int = <B>SetWindowLong(<I>hwnd</I><I>, index</I>
+
+<I>, value</I>
+
+</B>)<P>Places a long value at the specified offset into the extra window memory of the given window.<P>
+
+<H3>Parameters</H3><P><DT><I>hwnd</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>The handle to the window<P><DT><I>index</I> : int<P>
+
+<DD>The index of the item to set.<P><DT><I>value</I> : object<P>
+
+<DD>The value to set.<P><H3>Comments</H3>
+
+This function calls the SetWindowLongPtr Api function<P>
+
+If index is GWLP_WNDPROC, then the value parameter 
+
+must be a callable object (or a dictionary) to use as the 
+
+new window procedure.<P>
+
+
+    </div>
+  </body>
+</html>

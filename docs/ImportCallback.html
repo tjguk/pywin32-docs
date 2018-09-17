@@ -1,0 +1,52 @@
+
+<html>
+  <head>
+    <title>ImportCallback Object</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_objects.html">Objects</a> &gt; <a href="ImportCallback">ImportCallback</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>ImportCallback Object</H1><P>
+
+User-defined callback function used with <A HREF="win32file__WriteEncryptedFileRaw_meth.html">win32file::WriteEncryptedFileRaw</A><BR> 
+
+Function is called with 3 parameters: (Data, CallbackContext, Length)<BR> 
+
+&nbsp;&nbsp; Data: Writeable buffer to be filled with raw encrypted data.  Buffer memory is only valid within the callback function.<BR> 
+
+&nbsp;&nbsp; CallbackContext: The arbitrary object passed to WriteEncryptedFileRaw.<BR> 
+
+&nbsp;&nbsp; Length: Size of the data buffer.<BR> 
+
+Your implementation of this function should return a tuple of 2 ints containing 
+
+an error code (ERROR_SUCCESS on success), and the length of data written to the buffer.<BR> 
+
+Function exits when 0 is returned for the data length.<P>
+
+
+    </div>
+  </body>
+</html>

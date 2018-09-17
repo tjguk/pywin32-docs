@@ -1,0 +1,140 @@
+
+<html>
+  <head>
+    <title>PyTime__Format_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | 
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="PyTime.html">PyTime</A>.Format</H1><P>
+
+<A HREF="PyUnicode.html">PyUnicode</A> = <B>Format(<I>format</I></B>)<P>Formats the time value.<P>
+
+<H3>Parameters</H3><P><DT><I>format=%c</I> : string<P>
+
+<DD>The format.  See the comments section for a description of the supported flags.<P>
+
+<H3>Comments</H3>
+
+The following format characters are supported.<P>
+
+<P><TABLE COLS=2 WIDTH="100%" CELLSPACING=15>
+
+<TR>
+
+   <TD>
+
+       <B>Character</B>
+
+   </TD>
+
+   <TD>
+
+       <B>Description</B>
+
+   </TD>
+
+</TR>
+
+<TR><TD></TD><TD></TD></TR>
+
+<TR><TD>%a</TD><TD>Abbreviated weekday name</TD></TR>
+
+<TR><TD>%A</TD><TD>Full weekday name</TD></TR>
+
+<TR><TD>%b</TD><TD>Abbreviated month name</TD></TR>
+
+<TR><TD>%B</TD><TD>Full month name</TD></TR>
+
+<TR><TD>%c</TD><TD>Date and time representation appropriate for locale</TD></TR>
+
+<TR><TD>%d</TD><TD>Day of month as decimal number (01 - 31)</TD></TR>
+
+<TR><TD>%H</TD><TD>Hour in 24-hour format (00 - 23)</TD></TR>
+
+<TR><TD>%I</TD><TD>Hour in 12-hour format (01 - 12)</TD></TR>
+
+<TR><TD>%j</TD><TD>Day of year as decimal number (001 - 366)</TD></TR>
+
+<TR><TD>%m</TD><TD>Month as decimal number (01 - 12)</TD></TR>
+
+<TR><TD>%M</TD><TD>Minute as decimal number (00 - 59)</TD></TR>
+
+<TR><TD>%p</TD><TD>Current locale's A.M./P.M. indicator for 12-hour clock</TD></TR>
+
+<TR><TD>%S</TD><TD>Second as decimal number (00 - 59)</TD></TR>
+
+<TR><TD>%U</TD><TD>Week of year as decimal number, with Sunday as first day of week (00 - 51)</TD></TR>
+
+<TR><TD>%w</TD><TD>Weekday as decimal number (0 - 6; Sunday is 0)</TD></TR>
+
+<TR><TD>%W</TD><TD>Week of year as decimal number, with Monday as first day of week (00 - 51)</TD></TR>
+
+<TR><TD>%x</TD><TD>Date representation for current locale</TD></TR>
+
+<TR><TD>%X</TD><TD>Time representation for current locale</TD></TR>
+
+<TR><TD>%y</TD><TD>Year without century, as decimal number (00 - 99)</TD></TR>
+
+<TR><TD>%Y</TD><TD>Year with century, as decimal number</TD></TR>
+
+<TR><TD>%z, %Z</TD><TD>Time-zone name or abbreviation; no characters if time zone is unknown</TD></TR>
+
+<TR><TD>%%</TD><TD>Percent sign</TD></TR>
+
+</TABLE>As in the printf function, the # flag may prefix any formatting code. In that case, the meaning of the format code is changed as follows.<P>
+
+<P><TABLE COLS=2 WIDTH="100%" CELLSPACING=15>
+
+<TR>
+
+   <TD>
+
+       <B>Format Code</B>
+
+   </TD>
+
+   <TD>
+
+       <B>Meaning</B>
+
+   </TD>
+
+</TR>
+
+<TR><TD></TD><TD></TD></TR>
+
+<TR><TD>%#a, %#A, %#b, %#B, %#p, %#X, %#z, %#Z, %#%</TD><TD># flag is ignored.</TD></TR>
+
+<TR><TD>%#c</TD><TD>Long date and time representation, appropriate for current locale. For example: "Tuesday, March 14, 1995, 12:41:29".</TD></TR>
+
+<TR><TD>%#x</TD><TD>Long date representation, appropriate to current locale. For example: "Tuesday, March 14, 1995".</TD></TR>
+
+<TR><TD>%#d, %#H, %#I, %#j, %#m, %#M, %#S, %#U, %#w, %#W, %#y, %#Y</TD><TD>Remove leading zeros (if any).</TD></TR>
+
+</TABLE>
+    </div>
+  </body>
+</html>

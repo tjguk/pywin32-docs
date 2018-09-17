@@ -1,0 +1,70 @@
+
+<html>
+  <head>
+    <title>Source code folding in the editor</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="pythonwin.html">Pythonwin and win32ui</a> &gt; <a href="pythonwin_overview.html">Overviews</a> &gt; <a href="Source code folding in the editor">Source code folding in the editor</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>Source code folding in the editor</H1>
+
+Thanks to Scintilla (http://www.scintilla.org), Pythonwin supports 
+
+source code folding.  Folding is the ability to collapse sections of 
+
+your source-code into a single line, making it easier to navigate 
+
+around large files.  Any Python statement which introduces a new block 
+
+can be folded either by clicking on the indicator in the folding 
+
+margin (if enabled via the View-&gt;Options-&gt;Editor dialog), by 
+
+selecting one of the folding keystrokes (see <A HREF="Keyboard_Bindings.html">Keyboard Bindings</A>, or 
+
+by using View-&gt;Folding menu.)  <BR><P>
+
+All find/replace or 'goto linenumber' functions work correctly when 
+
+code is folded - the code is simply unfolded if necessary before the 
+
+relevant operation.  <BR><P>
+
+You may configure Pythonwin so that all files have their top-levels 
+
+folded when opened.  Only the first level folds are collapsed using 
+
+this function, so expanding the top-level fold reveals the entire 
+
+class/method that was folded.  Alternatively, you can use the 
+
+Keypad-Multiply key to toggle the first level folds for the entire 
+
+file at any time.  <BR><P>
+
+
+    </div>
+  </body>
+</html>

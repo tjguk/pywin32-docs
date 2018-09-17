@@ -1,0 +1,72 @@
+
+<html>
+  <head>
+    <title>win32security__InitializeSecurityContext_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32security.html">win32security</a> &gt; <a href="InitializeSecurityContext">InitializeSecurityContext</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32security.html">win32security</A>.InitializeSecurityContext</H1><P>
+
+(int, int, <A HREF="PyTime.html">PyTime</A>) = <B>InitializeSecurityContext(<I>Credential</I><I>, Context</I>
+
+<I>, TargetName</I>
+
+<I>, ContextReq</I>
+
+<I>, TargetDataRep</I>
+
+<I>, pInput</I>
+
+<I>, NewContext</I>
+
+<I>, pOutput</I>
+
+</B>)<P>Creates a security context based on credentials created by AcquireCredentialsHandle<P>
+
+<H3>Parameters</H3><P><DT><I>Credential</I> : <A HREF="PyCredHandle.html">PyCredHandle</A><P>
+
+<DD>A credentials handle as returned by <A HREF="win32security__AcquireCredentialsHandle_meth.html">win32security::AcquireCredentialsHandle</A><P><DT><I>Context</I> : <A HREF="PyCtxtHandle.html">PyCtxtHandle</A><P>
+
+<DD>Use None on initial call, then handle returned in NewContext thereafter<P><DT><I>TargetName</I> : str/unicode<P>
+
+<DD>Target of context, security package specific - Use None with NTLM<P><DT><I>ContextReq</I> : int<P>
+
+<DD>Combination of ISC_REQ_* flags<P><DT><I>TargetDataRep</I> : int<P>
+
+<DD>One of SECURITY_NATIVE_DREP,SECURITY_NETWORK_DREP<P><DT><I>pInput</I> : <A HREF="PySecBufferDesc.html">PySecBufferDesc</A><P>
+
+<DD>Data buffer - use None initially<P><DT><I>NewContext</I> : <A HREF="PyCtxtHandle.html">PyCtxtHandle</A><P>
+
+<DD>Uninitialized context handle to receive output<P><DT><I>pOutput</I> : <A HREF="PySecBufferDesc.html">PySecBufferDesc</A><P>
+
+<DD>Buffer that receives output data for subsequent calls<P><H3>Return Value</H3>Return value is a tuple of (return code, attribute flags, expiration time)<P>
+
+
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+
+<html>
+  <head>
+    <title>win32service__EnumServicesStatus_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32service.html">win32service</a> &gt; <a href="EnumServicesStatus">EnumServicesStatus</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32service.html">win32service</A>.EnumServicesStatus</H1><P>
+
+(tuple,...) = <B>EnumServicesStatus(<I>hSCManager</I><I>, ServiceType</I>
+
+<I>, ServiceState</I>
+
+</B>)<P>Returns a tuple of status info for each service that meets specified criteria<P>
+
+<H3>Parameters</H3><P><DT><I>hSCManager</I> : <A HREF="PySC_HANDLE.html">PySC_HANDLE</A><P>
+
+<DD>Handle to service control manager as returned by <A HREF="win32service__OpenSCManager_meth.html">win32service::OpenSCManager</A><P><DT><I>ServiceType=SERVICE_WIN32</I> : int<P>
+
+<DD>Types of services to enumerate (SERVICE_DRIVER and/or SERVICE_WIN32)<P>
+
+<DT><I>ServiceState=SERVICE_STATE_ALL</I> : int<P>
+
+<DD>Limits to services in specified state<P>
+
+<H3>Return Value</H3>Returns a sequence of tuples representing ENUM_SERVICE_STATUS structs: (ServiceName, DisplayName, <A HREF="SERVICE_STATUS.html">SERVICE_STATUS</A>)<P>
+
+
+
+
+    </div>
+  </body>
+</html>

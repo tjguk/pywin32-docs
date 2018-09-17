@@ -1,0 +1,52 @@
+
+<html>
+  <head>
+    <title>win32profile__LoadUserProfile_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32profile.html">win32profile</a> &gt; <a href="LoadUserProfile">LoadUserProfile</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32profile.html">win32profile</A>.LoadUserProfile</H1><P>
+
+<A HREF="PyHKEY.html">PyHKEY</A> = <B>LoadUserProfile(<I>hToken</I><I>, ProfileInfo</I>
+
+</B>)<P>Loads user settings into registry<P>
+
+<H3>Parameters</H3><P><DT><I>hToken</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>Logon token as returned by <A HREF="win32security__LogonUser_meth.html">win32security::LogonUser</A>, <A HREF="win32security__OpenThreadToken_meth.html">win32security::OpenThreadToken</A>, etc<P><DT><I>ProfileInfo</I> : <A HREF="PyPROFILEINFO.html">PyPROFILEINFO</A><P>
+
+<DD>Dictionary representing a PROFILEINFO structure<P><H3>Comments</H3>
+
+SE_BACKUP_NAME and SE_RESTORE_NAME privs are required, but do not have to be enabled<P>
+
+<H3>Return Value</H3>Returns a handle to user's registry key.<P>
+
+
+
+
+    </div>
+  </body>
+</html>

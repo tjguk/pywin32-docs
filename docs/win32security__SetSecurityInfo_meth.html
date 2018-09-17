@@ -1,0 +1,52 @@
+
+<html>
+  <head>
+    <title>win32security__SetSecurityInfo_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32security.html">win32security</a> &gt; <a href="SetSecurityInfo">SetSecurityInfo</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32security.html">win32security</A>.SetSecurityInfo</H1><P>
+
+<B>SetSecurityInfo(<I>handle</I><I>, ObjectType</I><I>, SecurityInfo</I><I>, Owner</I><I>, Group</I><I>, Dacl</I><I>, Sacl</I></B>)<P>Sets security info for an object by handle<P>
+
+<H3>Parameters</H3><P><DT><I>handle</I> : int/<A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>Handle to object<P><DT><I>ObjectType</I> : int<P>
+
+<DD>Value from SE_OBJECT_TYPE enum<P><DT><I>SecurityInfo</I> : int<P>
+
+<DD>Combination of SECURITY_INFORMATION constants<P><DT><I>Owner</I> : <A HREF="PySID.html">PySID</A><P>
+
+<DD>Sid to set as owner of object, can be None<P><DT><I>Group</I> : <A HREF="PySID.html">PySID</A><P>
+
+<DD>Group Sid, can be None<P><DT><I>Dacl</I> : <A HREF="PyACL.html">PyACL</A><P>
+
+<DD>Discretionary ACL to set for object, can be None<P><DT><I>Sacl</I> : <A HREF="PyACL.html">PyACL</A><P>
+
+<DD>System Audit ACL to set for object, can be None<P>
+    </div>
+  </body>
+</html>

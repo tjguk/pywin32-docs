@@ -1,0 +1,56 @@
+
+<html>
+  <head>
+    <title>shell__SHCreateShellItemArray_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="com.html">Python COM</a> &gt; <a href="com_modules.html">Modules</a> &gt; <a href="shell.html">shell</a> &gt; <a href="SHCreateShellItemArray">SHCreateShellItemArray</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="shell.html">shell</A>.SHCreateShellItemArray</H1><P>
+
+<A HREF="PyIShellItemArray.html">PyIShellItemArray</A> = <B>SHCreateShellItemArray(<I>parent</I><I>, sf</I>
+
+<I>, children</I>
+
+</B>)<P>Creates a Shell item array object.<P>
+
+<H3>Parameters</H3><P><DT><I>parent</I> : <A HREF="PyIDL.html">PyIDL</A><P>
+
+<DD>Absolute ID list of parent folder, or None if sf is specified<P><DT><I>sf</I> : <A HREF="PyIShellFolder.html">PyIShellFolder</A><P>
+
+<DD>The Shell data source object that is the parent of the child items specified in children. If parent is specified, this parameter can be NULL. 
+
+bNoneOK */))<P><DT><I>children</I> : [<A HREF="PyIDL.html">PyIDL</A>, ...]<P>
+
+<DD>Sequence of relative IDLs for items in the parent folder<P><H3>Comments</H3>
+
+This function is only available on Vista and later; a 
+
+COM exception with E_NOTIMPL will be thrown if the function can't be located.<P>
+
+
+    </div>
+  </body>
+</html>

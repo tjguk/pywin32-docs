@@ -1,0 +1,318 @@
+
+<html>
+  <head>
+    <title>win32com.shell and Windows Shell Links</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | 
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>win32com.shell and Windows Shell Links</H1>
+
+Following is documentation for the PyIShellLink object.<P>
+
+<H3>Example</H3>To create a <A HREF="PyIShellLink.html">PyIShellLink</A> object<P>
+
+<PRE>from win32com.shell import shell
+
+import pythoncom
+
+shortcut = pythoncom.CoCreateInstance(
+
+&#09;shell.CLSID_ShellLink, None,
+
+&#09;pythoncom.CLSCTX_INPROC_SERVER, shell.IID_IShellLink
+
+)
+
+</PRE>
+
+To load information from existing shortcut file<P>
+
+<PRE>shortcut.QueryInterface( pythoncom.IID_IPersistFile ).Load( filename )
+
+</PRE>
+
+To save information to a file<P>
+
+<PRE>shortcut.QueryInterface( pythoncom.IID_IPersistFile ).Save( filename, 0 )
+
+</PRE>
+
+This documentation class is based on: 
+
+http://msdn.microsoft.com/isapi/msdnlib.idc?theURL=/library/sdkdoc/shellcc/shell/ifaces/ishelllink/ishelllink.htm 
+
+With only minor alterations and notations by Mike Fletcher. 
+
+Errors may be present, read at your own risk. 
+
+See also: 
+
+http://msdn.microsoft.com/isapi/msdnlib.idc?theURL=/library/books/win95ui/chpt09-01.htm 
+
+A tutorial-like introduction, includes brief discussion 
+
+of non-file linking, and a fairly simple C sample application 
+
+for file-based linking.<P>
+
+<PRE>class PyIShellLink( IPersistFile ):
+
+&#09;''' Following is not a functional class, intended solely for documentation '''
+
+&#09;def GetArguments(self):
+
+&#09;&#09;'''Retrieves the command-line arguments associated with a shell link object. '''
+
+&#09;def SetArguments(self, argumentString):
+
+&#09;&#09;'''Sets the command-line arguments associated with a shell link object.'''
+
+
+
+&#09;def GetDescription(self):
+
+&#09;&#09;'''Retrieves the description string for a shell link object. '''
+
+&#09;def SetDescription(self, descriptionString):
+
+&#09;&#09;'''Sets the description string for a shell link object. '''
+
+
+
+&#09;def GetIconLocation(self):
+
+&#09;&#09;'''Retrieves the location (path and index) of the icon for a shell link object.
+
+&#09;&#09;Returns a tuple of string and integer'''
+
+&#09;def SetIconLocation(self, locationString, iconIndex):
+
+&#09;&#09;'''Sets the location (path and index) of the icon for a shell link object. '''
+
+
+
+&#09;def GetPath(self, flags):
+
+&#09;&#09;'''Retrieves the path and file name of a shell link object.
+
+&#09;&#09;Note: flags are available through shell.SLGP_*
+
+&#09;&#09;&#09;SLGP_SHORTPATH  Retrieves the standard short (8.3 format) file name.
+
+&#09;&#09;&#09;SLGP_UNCPRIORITY  Retrieves the Universal Naming Convention (UNC) path name
+
+&#09;&#09;&#09;of the file.
+
+&#09;&#09;&#09;SLGP_RAWPATH  Retrieves the raw path name. A raw path is something that might
+
+&#09;&#09;&#09;not exist and may include environment variables that need to be expanded.'''
+
+&#09;def SetPath(self, pathString):
+
+&#09;&#09;'''Sets the path and file name of a shell link object. '''
+
+&#09;def SetRelativePath(self, pathString):
+
+&#09;&#09;'''Sets the relative path for a shell link object.
+
+&#09;&#09;Note: This mechanism allows for moved link files
+
+&#09;&#09;to reestablish connection with relative files through
+
+&#09;&#09;similar-prefix comparisons'''
+
+
+
+&#09;def GetShowCmd(self):
+
+&#09;&#09;'''Retrieves the show (SW_) command for a shell link object.'''
+
+&#09;def SetShowCmd(self, constant):
+
+&#09;&#09;'''Sets the show (SW_) command for a shell link object.
+
+&#09;&#09;Note: constants are defined in win32con, ie. win32con.SW_*
+
+&#09;&#09;&#09;SW_SHOWNORMAL Activates and displays a window. If the window is minimized or
+
+&#09;&#09;&#09;maximized, the system restores it to its original size and position. An
+
+&#09;&#09;&#09;application should specify this flag when displaying the window for the first
+
+&#09;&#09;&#09;time.
+
+&#09;&#09;&#09;SW_SHOWMAXIMIZED Activates the window and displays it as a maximized window.
+
+&#09;&#09;&#09;SW_SHOWMINIMIZED Activates the window and displays it as a minimized window.
+
+&#09;&#09;'''
+
+
+
+&#09;def GetWorkingDirectory(self):
+
+&#09;&#09;'''Retrieves the name of the working directory for a shell link object. '''
+
+&#09;def SetWorkingDirectory(self, pathString):
+
+&#09;&#09;'''Sets the name of the working directory for a shell link object.'''
+
+
+
+&#09;def Resolve(self, window, flags):
+
+&#09;&#09;'''Resolves a shell link by searching for the shell link object and updating the
+
+&#09;&#09;shell link path and its list of identifiers (if necessary).
+
+&#09;&#09;Notes:
+
+&#09;&#09;&#09;window is the parent window of a dialog which will pop up if resolution fails
+
+&#09;&#09;flags:
+
+&#09;&#09;&#09;SLR_INVOKE_MSI  Call the Microsoft Windows Installer.
+
+&#09;&#09;&#09;SLR_NOLINKINFO  Disable distributed link tracking. By default, distributed
+
+&#09;&#09;&#09;&#09;link tracking tracks removable media across multiple devices based on the
+
+&#09;&#09;&#09;&#09;volume name. It also uses the UNC path to track remote file systems whose
+
+&#09;&#09;&#09;&#09;drive letter has changed. Setting SLR_NOLINKINFO disables both types of tracking.
+
+&#09;&#09;&#09;SLR_NO_UI       Do not display a dialog box if the link cannot be resolved. When
+
+&#09;&#09;&#09;&#09;SLR_NO_UI is set, the high-order word of fFlags can be set to a time-out value
+
+&#09;&#09;&#09;&#09;that specifies the maximum amount of time to be spent resolving the link. The
+
+&#09;&#09;&#09;&#09;function returns if the link cannot be resolved within the time-out duration.
+
+&#09;&#09;&#09;&#09;If the high-order word is set to zero, the time-out duration will be set to the
+
+&#09;&#09;&#09;&#09;default value of 3,000 milliseconds (3 seconds). To specify a value, set the high
+
+&#09;&#09;&#09;&#09;word of fFlags to the desired time-out duration, in milliseconds.
+
+&#09;&#09;&#09;SLR_NOUPDATE    Do not update the link information.
+
+&#09;&#09;&#09;SLR_NOSEARCH    Do not execute the search heuristics.
+
+&#09;&#09;&#09;SLR_NOTRACK     Do not use distributed link tracking.
+
+&#09;&#09;&#09;SLR_UPDATE      If the link object has changed, update its path and list of identifiers. If SLR_UPDATE is set, you do not need to call IPersistFile::IsDirty to determine whether or not the link object has changed.
+
+&#09;&#09;'''
+
+
+
+&#09;### Problematic elements
+
+&#09;# The problems below are due primarily to structs used in the API
+
+&#09;def GetIDList(self):
+
+&#09;&#09;'''Retrieves the list of item identifiers for a shell link object.
+
+&#09;&#09;Note: I do not see how to manipulate these identifiers, they are C structs,
+
+&#09;&#09;so I suppose we might be able to unpack them with the struct module.
+
+&#09;&#09;However, when I attempt this, I seem to get messed up identifiers
+
+&#09;&#09;(lengths of 0 for the individual identifiers) (see malfunctioning code below)'''
+
+&#09;def SetIDList(self, IDList):
+
+&#09;&#09;'''Sets the list of item identifiers for a shell link object.
+
+&#09;&#09;Note: See comments on GetIDList'''
+
+&#09;def SetHotkey(self, Hotkey):
+
+&#09;&#09;'''Sets the hot key for a shell link object.
+
+&#09;&#09;Note: New hot key. The virtual key code is in the low-order byte, and the modifier
+
+&#09;&#09;flags are in the high-order byte. The modifier flags can be a combination of the
+
+&#09;&#09;values specified in the description of the IShellLink::GetHotkey method.
+
+&#09;&#09;Note: I cannot find these constants anywhere...
+
+&#09;&#09;&#09;HOTKEYF_ALT, HOTKEYF_CONTROL, HOTKEYF_EXT, HOTKEYF_SHIFT
+
+&#09;&#09;'''
+
+&#09;def GetHotkey (self):
+
+&#09;&#09;'''Retrieves the hot key for a shell link object.
+
+&#09;&#09;Note: My tests do not seem to be working. at least, the values returned
+
+&#09;&#09;seem not to match what the documentation says should be returned.
+
+&#09;&#09;I would expect with a Hotkey of CTRL-ALT-T, to get an integer where
+
+&#09;&#09;integer & 256 == ord('T'), i.e. 116 or 84, instead I get 1620
+
+&#09;&#09;'''
+
+
+
+import struct
+
+def readIDList (data):
+
+&#09;''' unpack data into list of identifiers
+
+&#09;The following is not functional!'''
+
+&#09;result = []
+
+&#09;headersize = struct.calcsize('H')
+
+&#09;while data:
+
+&#09;&#09;count = struct.unpack('H', data[:headersize])[0]
+
+&#09;&#09;if count:
+
+&#09;&#09;&#09;result.append( data[:count] )
+
+&#09;&#09;&#09;data = data[count:]
+
+&#09;&#09;else:
+
+&#09;&#09;&#09;raise ValueError, ('ID item of length zero defined', data )
+
+</PRE>
+
+
+    </div>
+  </body>
+</html>

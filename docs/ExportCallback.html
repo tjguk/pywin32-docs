@@ -1,0 +1,48 @@
+
+<html>
+  <head>
+    <title>ExportCallback Object</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_objects.html">Objects</a> &gt; <a href="ExportCallback">ExportCallback</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>ExportCallback Object</H1><P>
+
+User-defined callback function used with <A HREF="win32file__ReadEncryptedFileRaw_meth.html">win32file::ReadEncryptedFileRaw</A>.<BR> 
+
+Function is called with 3 parameters: (Data, CallbackContext, Length)<BR> 
+
+&nbsp;&nbsp; Data: Read-only buffer containing the raw data read from the file.  Must not be referenced outside of the callback function.<BR> 
+
+&nbsp;&nbsp; CallbackContext: Arbitrary object passed to ReadEncryptedFileRaw.<BR> 
+
+&nbsp;&nbsp; Length: Number of bytes in the Data buffer.<BR> 
+
+On success, function should return ERROR_SUCCESS.  Otherwise, it can return a win32 error code, or simply raise an exception.<P>
+
+
+    </div>
+  </body>
+</html>

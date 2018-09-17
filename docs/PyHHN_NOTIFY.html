@@ -1,0 +1,94 @@
+
+<html>
+  <head>
+    <title>PyHHN_NOTIFY Object</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_objects.html">Objects</a> &gt; <a href="PyHHN_NOTIFY">PyHHN_NOTIFY</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>PyHHN_NOTIFY Object</H1><P>
+
+A Python object, representing an HHN_NOTIFY 
+
+structure<P>
+
+<H3>Comments</H3>
+
+Typically you create a PyHHN_NOTIFY 
+
+(via <A HREF="win32help__HHN_NOTIFY_meth.html">win32help::HHN_NOTIFY</A>) object, and set its properties. 
+
+The object can then be passed to any function which takes an HHN_NOTIFY 
+
+object.<BR> 
+
+<BR> 
+
+Use this structure to return the file name of the topic that has been 
+
+navigated to, or to return the window type name of the help window that 
+
+has been created.<BR> 
+
+<BR> 
+
+Used by<BR> 
+
+<B>HHN_NAVCOMPLETE</B>
+
+
+
+<BR> 
+
+<B>HHN_WINDOW_CREATE</B>
+
+
+
+<BR><P>
+
+<H3>Properties</H3>
+
+<DL>
+
+<DT><B>NMHDR hdr</B>
+
+<DD>Standard WM_NOTIFY header.(<A HREF="win32help__NMHDR_meth.html">win32help::NMHDR</A>)<P>
+
+
+
+<DT><B>string url</B>
+
+<DD>A multi-byte, zero-terminated string that specifies 
+
+the topic navigated to, or the name of the help window being created.<P>
+
+
+
+</DL>
+
+
+    </div>
+  </body>
+</html>

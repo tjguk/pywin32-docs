@@ -1,0 +1,64 @@
+
+<html>
+  <head>
+    <title>win32inet__InternetCanonicalizeUrl_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32inet.html">win32inet</a> &gt; <a href="InternetCanonicalizeUrl">InternetCanonicalizeUrl</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32inet.html">win32inet</A>.InternetCanonicalizeUrl</H1><P>
+
+string = <B>InternetCanonicalizeUrl(<I>url</I><I>, flags</I>
+
+</B>)<P>Canonicalizes a URL, which includes 
+
+converting unsafe characters and spaces into escape sequences.<P>
+
+<H3>Parameters</H3><P><DT><I>url</I> : string<P>
+
+<DD>The URL to canonicalize.<P><DT><I>flags=0</I> : int<P>
+
+<DD>integer value that contains the flags that control 
+
+canonicalization. This can be one of the following values:<P>
+
+<TR><TD>ICU_BROWSER_MODE</TD><TD>Does not encode or decode characters after "#" or "?", and does not remove trailing white space after "?". If this value is not specified, the entire URL is encoded and trailing white space is removed.</TD></TR>
+
+<TR><TD>ICU_DECODE</TD><TD>Converts all %XX sequences to characters, including escape sequences, before the URL is parsed.</TD></TR>
+
+<TR><TD>ICU_ENCODE_PERCENT</TD><TD>Encodes any percent signs encountered. By default, percent signs are not encoded. This value is available in Microsoft&#174; Internet Explorer 5 and later versions of the Win32&#174; Internet functions.</TD></TR>
+
+<TR><TD>ICU_ENCODE_SPACES_ONLY</TD><TD>Encodes spaces only.</TD></TR>
+
+<TR><TD>ICU_NO_ENCODE</TD><TD>Does not convert unsafe characters to escape sequences.</TD></TR>
+
+<TR><TD>ICU_NO_META</TD><TD>Does not remove meta sequences (such as "." and "..") from the URL. 
+
+If no flags are specified (dwFlags = 0), the function converts all unsafe characters and meta sequences (such as .,\\ .., and ...) to escape sequences.</TD></TR>
+
+</TABLE>
+    </div>
+  </body>
+</html>

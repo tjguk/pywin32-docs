@@ -1,0 +1,48 @@
+
+<html>
+  <head>
+    <title>win32file__TransmitCommChar_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32file.html">win32file</a> &gt; <a href="TransmitCommChar">TransmitCommChar</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32file.html">win32file</A>.TransmitCommChar</H1><P>
+
+<B>TransmitCommChar(<I>handle</I><I>, cChar</I></B>)<P>Transmits a specified character ahead of any pending data in the output buffer of the specified communications device.<P>
+
+<H3>Parameters</H3><P><DT><I>handle</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>The handle to the communications device.<P><DT><I>cChar</I> : char<P>
+
+<DD>The character to transmit.<P><H3>Comments</H3>
+
+The TransmitCommChar function is useful for sending an interrupt character (such as a CTRL+C) to a host system. 
+
+<BR>If the device is not transmitting, TransmitCommChar cannot be called repeatedly. Once TransmitCommChar places a character in the output buffer, the character must be transmitted before the function can be called again. If the previous character has not yet been sent, TransmitCommChar returns an error.<P>
+
+
+    </div>
+  </body>
+</html>

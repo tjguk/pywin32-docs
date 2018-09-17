@@ -1,0 +1,46 @@
+
+<html>
+  <head>
+    <title>DEBUG_PROCESS</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_constants.html">Constants</a> &gt; <a href="DEBUG_PROCESS">DEBUG_PROCESS</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>DEBUG_PROCESS</H1>
+
+<B>const win32process.DEBUG_PROCESS;</B><P>
+
+If this flag is set, the calling process is treated as a debugger, and the new process is a process being debugged. The system notifies the debugger of all debug events that occur in the process being debugged. 
+
+If you create a process with this flag set, only the calling thread (the thread that called CreateProcess) can call the WaitForDebugEvent function. 
+
+Windows 95 and Windows 98: This flag is not valid if the new process is a 16-bit application.<P>
+
+
+    </div>
+  </body>
+</html>

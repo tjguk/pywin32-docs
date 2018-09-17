@@ -1,0 +1,60 @@
+
+<html>
+  <head>
+    <title>win32file__CreateSymbolicLink_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32file.html">win32file</a> &gt; <a href="CreateSymbolicLink">CreateSymbolicLink</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32file.html">win32file</A>.CreateSymbolicLink</H1><P>
+
+<B>CreateSymbolicLink(<I>SymlinkFileName</I><I>, TargetFileName</I><I>, Flags</I><I>, Transaction</I></B>)<P>Creates a symbolic link (reparse point)<P>
+
+<H3>Parameters</H3><P><DT><I>SymlinkFileName</I> : <A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>Path of the symbolic link to be created<P><DT><I>TargetFileName</I> : <A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>The name of file to which link will point<P><DT><I>Flags=0</I> : int<P>
+
+<DD>SYMBOLIC_LINK_FLAG_DIRECTORY is only defined flag<P>
+
+<DT><I>Transaction=None</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>Handle to a transaction, as returned by <A HREF="win32transaction__CreateTransaction_meth.html">win32transaction::CreateTransaction</A><P>
+
+<H3>Comments</H3>
+
+This method only exists on Vista and later.<P>
+
+Accepts keyword args.<P>
+
+Requires SeCreateSymbolicLink priv.<P>
+
+If the Transaction parameter is passed in, CreateSymbolicLinkTransacted will be called<P>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+
+<html>
+  <head>
+    <title>shell__SHGetFolderPath_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="com.html">Python COM</a> &gt; <a href="com_modules.html">Modules</a> &gt; <a href="shell.html">shell</a> &gt; <a href="SHGetFolderPath">SHGetFolderPath</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="shell.html">shell</A>.SHGetFolderPath</H1><P>
+
+string/<A HREF="PyUnicode.html">PyUnicode</A> = <B>SHGetFolderPath(<I>hwndOwner</I><I>, nFolder</I>
+
+<I>, handle</I>
+
+<I>, flags</I>
+
+</B>)<P>Retrieves the path of a folder.<P>
+
+<H3>Parameters</H3><P><DT><I>hwndOwner</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>Parent window, can be None (or 0)<P><DT><I>nFolder</I> : int<P>
+
+<DD>One of the CSIDL_* constants specifying the path.<P><DT><I>handle</I> : <A HREF="PyHANDLE.html">PyHANDLE</A><P>
+
+<DD>An access token that can be used to represent a particular user, or None<P><DT><I>flags</I> : int<P>
+
+<DD>Controls which path is returned.  May be SHGFP_TYPE_CURRENT or SHGFP_TYPE_DEFAULT<P><H3>Comments</H3>
+
+This method is only available with later versions of shell32.dll, or if you have shfolder.dll installed on earlier systems<P>
+
+
+    </div>
+  </body>
+</html>

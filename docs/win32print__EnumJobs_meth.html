@@ -1,0 +1,58 @@
+
+<html>
+  <head>
+    <title>win32print__EnumJobs_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32print.html">win32print</a> &gt; <a href="EnumJobs">EnumJobs</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32print.html">win32print</A>.EnumJobs</H1><P>
+
+tuple = <B>EnumJobs(<I>hPrinter</I><I>, FirstJob</I>
+
+<I>, NoJobs</I>
+
+<I>, Level</I>
+
+</B>)<P>Enumerates print jobs on specified printer.<P>
+
+<H3>Parameters</H3><P><DT><I>hPrinter</I> : <A HREF="PyPrinterHANDLE.html">PyPrinterHANDLE</A><P>
+
+<DD>Handle of printer.<P><DT><I>FirstJob</I> : int<P>
+
+<DD>location of first job in print queue to enumerate.<P><DT><I>NoJobs</I> : int<P>
+
+<DD>Number of jobs to enumerate.<P><DT><I>Level=1</I> : int<P>
+
+<DD>Level of information to return (JOB_INFO_1, JOB_INFO_2, JOB_INFO_3 supported).<P>
+
+<H3>Return Value</H3>Returns a sequence of dictionaries representing JOB_INFO_* structures, depending on level<P>
+
+
+
+
+    </div>
+  </body>
+</html>

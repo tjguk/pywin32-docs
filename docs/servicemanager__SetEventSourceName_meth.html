@@ -1,0 +1,62 @@
+
+<html>
+  <head>
+    <title>servicemanager__SetEventSourceName_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="servicemanager.html">servicemanager</a> &gt; <a href="SetEventSourceName">SetEventSourceName</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="servicemanager.html">servicemanager</A>.SetEventSourceName</H1><P>
+
+<B>SetEventSourceName(<I>sourceName</I><I>, registerNow</I></B>)<P>Sets the event source name 
+
+for event log entries written by the service.<P>
+
+<H3>Parameters</H3><P><DT><I>sourceName</I> : string<P>
+
+<DD>The event source name<P><DT><I>registerNow=False</I> : bool<P>
+
+<DD>If True, the event source name in the 
+
+registry will be updated immediately. 
+
+If False, the name will be registered the first time an event log entry 
+
+is written via any pythonservice methods (or possibly never if no record 
+
+if written). 
+
+<BR>Note that in some cases, the service itself will not have permission 
+
+to write the event source in the registry.  Therefore, it would be 
+
+prudent for your installation program to call this function with 
+
+registerNow=True, to ensure your services can write useful entries.<P>
+
+
+    </div>
+  </body>
+</html>

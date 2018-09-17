@@ -1,0 +1,56 @@
+
+<html>
+  <head>
+    <title>PyIUnknown Object</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="com.html">Python COM</a> &gt; <a href="com_objects.html">Objects</a> &gt; <a href="PyIUnknown">PyIUnknown</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1>PyIUnknown Object</H1><P>
+
+The base object for all PythonCOM objects.  Wraps a COM IUnknown object.<P>
+
+<H3>Methods</H3><P><DL><DT><A HREF="PyIUnknown__QueryInterface_meth.html">QueryInterface</A><BR>
+
+<DD>Queries the object for an interface.&nbsp;<P></DL>
+
+<H3>Comments</H3>
+
+Note that there are no reference counting functions that are typically exposed via COM. 
+
+This is because COM reference counts are automatically handled by PythonCOM - each interface 
+
+object keeps exactly one COM reference, regardless of how many Python references.  When the 
+
+Python object destructs due to its reference count hitting zero, the COM reference is then 
+
+released.  It is not possible for force the closure of a PythonCOM object - the only 
+
+way to ensure cleanup is to remove all Python references.<P>
+
+
+    </div>
+  </body>
+</html>

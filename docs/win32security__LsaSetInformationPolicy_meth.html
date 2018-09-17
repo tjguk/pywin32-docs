@@ -1,0 +1,72 @@
+
+<html>
+  <head>
+    <title>win32security__LsaSetInformationPolicy_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32security.html">win32security</a> &gt; <a href="LsaSetInformationPolicy">LsaSetInformationPolicy</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32security.html">win32security</A>.LsaSetInformationPolicy</H1><P>
+
+<B>LsaSetInformationPolicy(<I>PolicyHandle</I><I>, InformationClass</I><I>, Information</I></B>)<P>Sets policy options<P>
+
+<H3>Parameters</H3><P><DT><I>PolicyHandle</I> : <A HREF="PyLSA_HANDLE.html">PyLSA_HANDLE</A><P>
+
+<DD>An LSA policy handle as returned by <A HREF="win32security__LsaOpenPolicy_meth.html">win32security::LsaOpenPolicy</A><P><DT><I>InformationClass</I> : int<P>
+
+<DD>POLICY_INFORMATION_CLASS value<P><DT><I>Information</I> : object<P>
+
+<DD>Type is dependent on InformationClass<P><P><TABLE COLS=2 WIDTH="100%" CELLSPACING=15>
+
+<TR>
+
+   <TD>
+
+       <B>InformationClass</B>
+
+   </TD>
+
+   <TD>
+
+       <B>Type of input expected</B>
+
+   </TD>
+
+</TR>
+
+<TR><TD></TD><TD></TD></TR>
+
+<TR><TD>PolicyAuditEventsInformation</TD><TD>(boolean, (int, ...)) 
+
+<BR>First member imdicates whether auditing is enabled or not. 
+
+<BR>Seconed member is a sequence of POLICY_AUDIT_EVENT_* flags specifying which events 
+
+should be audited.  See AuditCategory* values for positions of each event type.</TD></TR>
+
+</TABLE>
+    </div>
+  </body>
+</html>

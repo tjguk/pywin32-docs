@@ -1,0 +1,66 @@
+
+<html>
+  <head>
+    <title>win32security__DsGetSpn_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32security.html">win32security</a> &gt; <a href="DsGetSpn">DsGetSpn</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32security.html">win32security</A>.DsGetSpn</H1><P>
+
+(<A HREF="PyUnicode.html">PyUnicode</A>,...) = <B>DsGetSpn(<I>ServiceType</I><I>, ServiceClass</I>
+
+<I>, ServiceName</I>
+
+<I>, InstancePort</I>
+
+<I>, InstanceNames</I>
+
+<I>, InstancePorts</I>
+
+</B>)<P>Compose one or more service principal names to be registered using <A HREF="win32security__DsWriteAccountSpn_meth.html">win32security::DsWriteAccountSpn</A><P>
+
+<H3>Parameters</H3><P><DT><I>ServiceType</I> : int<P>
+
+<DD>Type of Spn to create, one of the DS_SPN_* constants<P><DT><I>ServiceClass</I> : <A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>Arbitrary string that describes type of service, eg http<P><DT><I>ServiceName</I> : <A HREF="PyUnicode.html">PyUnicode</A><P>
+
+<DD>Name of service, can be None (not required for DS_SPN_*_HOST Spn's)<P><DT><I>InstancePort=0</I> : int<P>
+
+<DD>Port nbr for service instance, use 0 for no port<P>
+
+<DT><I>InstanceNames=None</I> : (<A HREF="PyUnicode.html">PyUnicode</A>,...)<P>
+
+<DD>A sequence of service instance names, can be None - not required for for host Spn's<P>
+
+<DT><I>InstancePorts=None</I> : (int,...)<P>
+
+<DD>A sequence of extra instance ports.  If specified, must be same length as InstanceNames.<P>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+
+<html>
+  <head>
+    <title>win32clipboard__SetClipboardText_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32clipboard.html">win32clipboard</a> &gt; <a href="SetClipboardText">SetClipboardText</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32clipboard.html">win32clipboard</A>.SetClipboardText</H1><P>
+
+int = <B>SetClipboardText(<I>text</I><I>, format</I>
+
+</B>)<P>Convienience function to 
+
+call SetClipboardData with text.<P>
+
+<H3>Parameters</H3><P><DT><I>text</I> : str/unicode<P>
+
+<DD>The text to place on the clipboard.<P><DT><I>format=CF_TEXT</I> : int<P>
+
+<DD>The clipboard format to use - must be CF_TEXT or CF_UNICODETEXT<P>
+
+<H3>Comments</H3>
+
+You may pass a Unicode or string/bytes object to this function, 
+
+but depending on the value of the 'format' param, it may be converted 
+
+to the appropriate type for that param.<P>
+
+Many applications will want to call this function twice, with the 
+
+same string specified but CF_UNICODETEXT specified the second.<P>
+
+<H3>Win32 API References</H3><P><DT>Search for <i>SetClipboardData</i> at <a href="http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetClipboardData" target="_blank">msdn</a>, <a href="http://www.google.com/search?q=SetClipboardData" target="_blank">google</a> or <a href="http://groups.google.com/groups?q=SetClipboardData" target="_blank">google groups</a>.<P>
+
+<H3>Return Value</H3>If the function succeeds, the return value is integer handle 
+
+of the data.<BR> 
+
+If the function fails, win32api.error is raised with the GetLastError 
+
+info.<P>
+
+
+
+
+    </div>
+  </body>
+</html>

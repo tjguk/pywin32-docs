@@ -1,0 +1,54 @@
+
+<html>
+  <head>
+    <title>win32security__GetNamedSecurityInfo_meth.html</title>
+    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+    
+<div class="navigation">
+  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_modules.html">Modules</a> &gt; <a href="win32security.html">win32security</a> &gt; <a href="GetNamedSecurityInfo">GetNamedSecurityInfo</a>
+</div>
+
+    <div id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H1><A HREF="win32security.html">win32security</A>.GetNamedSecurityInfo</H1><P>
+
+<A HREF="PySECURITY_DESCRIPTOR.html">PySECURITY_DESCRIPTOR</A> = <B>GetNamedSecurityInfo(<I>ObjectName</I><I>, ObjectType</I>
+
+<I>, SecurityInfo</I>
+
+</B>)<P>Retrieve security info for an object by name<P>
+
+<H3>Parameters</H3><P><DT><I>ObjectName</I> : str/unicode<P>
+
+<DD>Name of object<P><DT><I>ObjectType</I> : int<P>
+
+<DD>Value from SE_OBJECT_TYPE enum<P><DT><I>SecurityInfo</I> : int<P>
+
+<DD>Combination of SECURITY_INFORMATION constants<P><H3>Comments</H3>
+
+Separate owner, group, dacl, and sacl are not returned as they can be easily retrieved from 
+
+the returned PySECURITY_DESCRIPTOR<P>
+
+
+    </div>
+  </body>
+</html>
