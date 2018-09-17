@@ -192,13 +192,15 @@ SPECIAL_PROCESSING = {
   "html/isapi/doc/isapi.html" : fixup_isapi_links
 }
 
-ARGS = set (["nogenerate", "debug", "nosvn"])
+ARGS = set (["nogenerate", "debug", "nochanges"])
 def main (args=[]):
   if not set (args) <= ARGS:
     raise RuntimeError ("Arguments %s not recognised; should only be %s" % (", ".join (set (args).difference (ARGS)), ", ".join (ARGS)))
 
   html_tempdir = os.path.join (tempfile.gettempdir (), "pywin32-docs-htmlhelp")
-  html2_tempdir = "."
+  html2_tempdir = "docs"
+  if not os.path.exists(html2_tempdir):
+      os.mkdir(html2_tempdir)
   css_filename = "pywin32.css"
   toc_filename = "contents.html"
   changes_filename = "changes.html"
@@ -269,8 +271,11 @@ def main (args=[]):
           html = HTML % locals ()
         open (html2_filepath, "w").write (html.encode ("utf8"))
 
-  if "nosvn" not in args:
+  try:
     import svn.local
+  except ImportError:
+    args.add("nochanges")
+  if "nochanges" not in args:
     print "Finding changes..."
     UNCHANGED = ["normal", "ignored"] ## pysvn.wc_status_kind.normal, pysvn.wc_status_kind.ignored]
     EXCLUDE_FROM_CHANGES = ["changes.html", "convert_to_html.py", "pywin32.chm"]
