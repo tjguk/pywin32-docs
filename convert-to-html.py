@@ -7,6 +7,7 @@ import operator
 import posixpath
 import re
 import sgmllib
+import shutil
 import tempfile
 
 site_packages = os.path.join(sys.exec_prefix, "lib", "site-packages")
@@ -153,7 +154,7 @@ to make the HTML display properly, no changes have been made.</p>
 
 <ul>
 <li> <a href="contents.html">Table of Contents</a> </li>
-<li> <a href="PyWin32.html">Front Page</a> </li>
+<!--li> <a href="PyWin32.html">Front Page</a> </li-->
 <li> <a href="html/CHANGES.txt">Project ChangeLog</a> </li>
 <!-- li> <a href="changes.html">Added / Updated pages</a></li -->
 </ul>
@@ -311,6 +312,9 @@ def main (args=[]):
       css_filename = css_filename
       navigation = ""
       outfile.write (HTML % locals ())
+
+  print "Copying CSS file"
+  shutil.copyfile("pywin32.css", os.path.join(html2_tempdir, "pywin32.css"))
 
 if __name__ == '__main__':
   main (sys.argv[1:])
