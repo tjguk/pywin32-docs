@@ -46,31 +46,47 @@ the object attributes will be automatically updated.<P>
 
 <DT><B>integer Offset</B>
 
-<DD>Specifies a file position at which to start the transfer. The file position is a byte offset from the start of the file. The calling process sets this member before calling the ReadFile&#160;or WriteFile function. This member is ignored when reading from or writing to named pipes and communications devices.<P>
+<DD>Specifies a file position at which to start the transfer. The 
+
+file position is a byte offset from the start of the file. The calling process sets 
+
+this member before calling the ReadFile&#160;or WriteFile function. This member is 
+
+ignored when reading from or writing to named pipes and communications devices.<P>
 
 
 
 <DT><B>integer OffsetHigh</B>
 
-<DD>Specifies the high word of the byte offset at which to start the transfer.<P>
+<DD>Specifies the high word of the 
+
+byte offset at which to start the transfer.<P>
 
 
 
 <DT><B>object object</B>
 
-<DD>Any python object that you want to attach to your overlapped I/O request.<P>
+<DD>Any python object that you want to attach 
+
+to your overlapped I/O request.<P>
 
 
 
 <DT><B>int dword</B>
 
-<DD>An integer buffer that may be used by overlapped functions (eg, <A HREF="win32file__WaitCommEvent_meth.html">win32file::WaitCommEvent</A>)<P>
+<DD>An integer buffer that may be used by overlapped 
+
+functions (eg, <A HREF="win32file__WaitCommEvent_meth.html">win32file::WaitCommEvent</A>)<P>
 
 
 
 <DT><B><A HREF="PyHANDLE.html">PyHANDLE</A> hEvent</B>
 
-<DD>Identifies an event set to the signaled state when the transfer has been completed. The calling process sets this member before calling the <A HREF="win32file__ReadFile_meth.html">win32file::ReadFile</A>, <A HREF="win32file__WriteFile_meth.html">win32file::WriteFile</A>, <A HREF="win32pipe__ConnectNamedPipe_meth.html">win32pipe::ConnectNamedPipe</A>, or <A HREF="win32pipe__TransactNamedPipe_meth.html">win32pipe::TransactNamedPipe</A>&#160;function.<P>
+<DD>Identifies an event set to the signaled state when 
+
+the transfer has been completed. The calling process sets this member before 
+
+calling the <A HREF="win32file__ReadFile_meth.html">win32file::ReadFile</A>, <A HREF="win32file__WriteFile_meth.html">win32file::WriteFile</A>, <A HREF="win32pipe__ConnectNamedPipe_meth.html">win32pipe::ConnectNamedPipe</A>, or <A HREF="win32pipe__TransactNamedPipe_meth.html">win32pipe::TransactNamedPipe</A>&#160;function.<P>
 
 
 

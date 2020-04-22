@@ -42,7 +42,9 @@ object = <B>Invoke(<I>dispid</I><I>, lcid</I>
 
 <H3>Parameters</H3><P><DT><I>dispid</I> : int<P>
 
-<DD>The dispid to use.  Typically this value will come from <A HREF="PyIDispatch__GetIDsOfNames_meth.html">PyIDispatch::GetIDsOfNames</A> or from a type library.<P><DT><I>lcid</I> : int<P>
+<DD>The dispid to use.  Typically this value will come from <A HREF="PyIDispatch__GetIDsOfNames_meth.html">PyIDispatch::GetIDsOfNames</A> or 
+
+from a type library.<P><DT><I>lcid</I> : int<P>
 
 <DD>The locale id to use.<P><DT><I>flags</I> : int<P>
 
@@ -66,13 +68,17 @@ object = <B>Invoke(<I>dispid</I><I>, lcid</I>
 
 <TR><TD></TD><TD></TD></TR>
 
-<TR><TD>DISPATCH_METHOD</TD><TD>The member is invoked as a method. If a property has the same name, both this and the DISPATCH_PROPERTYGET flag may be set.</TD></TR>
+<TR><TD>DISPATCH_METHOD</TD><TD>The member is invoked as a method. If a property has the same name, both this and the 
+
+DISPATCH_PROPERTYGET flag may be set.</TD></TR>
 
 <TR><TD>DISPATCH_PROPERTYGET</TD><TD>The member is retrieved as a property or data member.</TD></TR>
 
 <TR><TD>DISPATCH_PROPERTYPUT</TD><TD>The member is changed as a property or data member.</TD></TR>
 
-<TR><TD>DISPATCH_PROPERTYPUTREF</TD><TD>The member is changed by a reference assignment, rather than a value assignment. This flag is valid only when the property accepts a reference to an object.</TD></TR>
+<TR><TD>DISPATCH_PROPERTYPUTREF</TD><TD>The member is changed by a reference assignment, rather than a value assignment. 
+
+This flag is valid only when the property accepts a reference to an object.</TD></TR>
 
 </TABLE><DT><I>bResultWanted</I> : int<P>
 

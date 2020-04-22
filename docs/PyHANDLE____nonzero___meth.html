@@ -34,7 +34,7 @@
 
 <H3>Return Value</H3>The result is 1 if the attached handle is non zero, else 0. 
 
-static*/ int PyHANDLE::nonzeroFunc(PyObject *ob)<P>
+static*/ int PyHANDLE::nonzeroFunc(PyObject *ob) { return ((PyHANDLE *)ob)-&gt;m_handle != 0; }<P>
 
 
 

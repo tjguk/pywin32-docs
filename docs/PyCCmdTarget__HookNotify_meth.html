@@ -50,11 +50,11 @@ The handler will be called with 2 arguments<BR>
 
 A tuple describing standard notification information.<BR> 
 
-A tuple describing extra notification params, or an integer containing the address of the first byte of the extended information.<BR> 
+A tuple describing extra notification params, or an integer containing the address of the first byte of the 
 
-If the handler returns TRUE, then the command will be passed on to the 
+extended information.<BR> If the handler returns TRUE, then the command will be passed on to the default handler, 
 
-default handler, otherwise the message will be consumed.<P>
+otherwise the message will be consumed.<P>
 
 Certain notification codes are recognised internally, and these are converted to a Python tuple. 
 

@@ -36,13 +36,13 @@
 
 <DD>A string containing the name of the key.<P><H3>Comments</H3>
 
-Causes application settings to be stored in the registry instead of INI files. This function sets m_pszRegistryKey, which 
+Causes application settings to be stored in the registry instead of INI files. This function sets 
 
-is then used by the GetProfileXXX and WriteProfileXXX member functions of CWinApp. If this function has been 
+m_pszRegistryKey, which is then used by the GetProfileXXX and WriteProfileXXX member functions of CWinApp. If 
 
-called, the list of most recently-used (MRU) files is also stored in the registry. The registry key is usually the name of a 
+this function has been called, the list of most recently-used (MRU) files is also stored in the registry. The 
 
-company. It is stored in a key of the following form: 
+registry key is usually the name of a company. It is stored in a key of the following form: 
 
 HKEY_CURRENT_USER\\Software\\&lt;company name&gt;\\&lt;application name&gt;\\&lt;section name&gt;\\&lt;value name&gt;.<P>
 

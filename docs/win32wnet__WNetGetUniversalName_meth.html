@@ -32,7 +32,9 @@
 
 string/tuple = <B>WNetGetUniversalName(<I>localPath</I><I>, infoLevel</I>
 
-</B>)<P>Takes a drive-based path for a network resource and returns an information structure that contains a more universal form of the name.<P>
+</B>)<P>Takes a drive-based path for a network resource and returns an 
+
+information structure that contains a more universal form of the name.<P>
 
 <H3>Parameters</H3><P><DT><I>localPath</I> : string<P>
 
@@ -44,9 +46,9 @@ resource of interest is a file named SAMPLE.DOC in the directory \\WIN32\\EXAMPL
 
 that share, the drive-based path is H:\\WIN32\\EXAMPLES\\SAMPLE.DOC.<P><DT><I>infoLevel=UNIVERSAL_NAME_INFO_LEVEL</I> : int<P>
 
-<DD>Specifies the type of structure that the function stores in the buffer pointed to by the lpBuffer parameter. 
+<DD>Specifies the type of structure that the function stores in the 
 
-This parameter can be one of the following values.<P>
+buffer pointed to by the lpBuffer parameter. This parameter can be one of the following values.<P>
 
 <P><TABLE COLS=2 WIDTH="100%" CELLSPACING=15>
 
@@ -70,9 +72,13 @@ This parameter can be one of the following values.<P>
 
 <TR><TD>UNIVERSAL_NAME_INFO_LEVEL (=1)</TD><TD>The function returns a simple string with the UNC name.</TD></TR>
 
-<TR><TD>REMOTE_NAME_INFO_LEVEL (=2)</TD><TD>The function returns a tuple based in the Win32 REMOTE_NAME_INFO data structure.</TD></TR>
+<TR><TD>REMOTE_NAME_INFO_LEVEL (=2)</TD><TD>The function returns a tuple based in the Win32 REMOTE_NAME_INFO data 
 
-</TABLE><H3>Return Value</H3>If the infoLevel parameter is REMOTE_NAME_INFO_LEVEL, the result is a tuple of 3 strings: (UNCName, connectionName, remainingPath)<P>
+structure.</TD></TR>
+
+</TABLE><H3>Return Value</H3>If the infoLevel parameter is REMOTE_NAME_INFO_LEVEL, the result is a tuple of 3 strings: (UNCName, 
+
+connectionName, remainingPath)<P>
 
 
 

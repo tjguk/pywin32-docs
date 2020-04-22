@@ -34,13 +34,15 @@ int = <B>GetCurrentThread(</B>)<P>Returns a pseudohandle for the current thread.
 
 <H3>Comments</H3>
 
-A pseudohandle is a special constant that is interpreted as the current thread handle. The calling thread can use this handle to specify itself whenever a thread handle is required. Pseudohandles are not inherited by child processes. 
+A pseudohandle is a special constant that is interpreted as the current thread handle. The calling thread 
 
-The method <A HREF="win32api__DuplicateHandle_meth.html">win32api::DuplicateHandle</A> can be used to create a handle that other threads and processes can use. 
+can use this handle to specify itself whenever a thread handle is required. Pseudohandles are not inherited by 
 
-As this handle can not be closed, and integer is returned rather than 
+child processes. The method <A HREF="win32api__DuplicateHandle_meth.html">win32api::DuplicateHandle</A> can be used to create a handle that other threads and 
 
-a <A HREF="PyHANDLE.html">PyHANDLE</A> object, which would attempt to automatically close the handle.<P>
+processes can use. As this handle can not be closed, and integer is returned rather than a <A HREF="PyHANDLE.html">PyHANDLE</A> object, 
+
+which would attempt to automatically close the handle.<P>
 
 <H3>Win32 API References</H3><P><DT>Search for <i>GetCurrentThread</i> at <a href="http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCurrentThread" target="_blank">msdn</a>, <a href="http://www.google.com/search?q=GetCurrentThread" target="_blank">google</a> or <a href="http://groups.google.com/groups?q=GetCurrentThread" target="_blank">google groups</a>.<P>
 

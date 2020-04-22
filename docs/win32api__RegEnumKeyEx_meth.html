@@ -34,7 +34,9 @@ tuple = <B>RegEnumKeyEx(<I>Key</I></B>)<P>Lists subkeys of a registry key<P>
 
 <H3>Parameters</H3><P><DT><I>Key</I> : <A HREF="PyHKEY.html">PyHKEY</A>/int<P>
 
-<DD>An already open key, or any one of the following win32con constants:<BR>HKEY_CLASSES_ROOT<BR>HKEY_CURRENT_USER<BR>HKEY_LOCAL_MACHINE<BR>HKEY_USERS.<P><H3>Return Value</H3>Returns subkeys as tuples of  (name, reserved, class, last write time). Reserved will always be 0.<P>
+<DD>An already open key, or any one of the following win32con 
+
+constants:<BR>HKEY_CLASSES_ROOT<BR>HKEY_CURRENT_USER<BR>HKEY_LOCAL_MACHINE<BR>HKEY_USERS.<P><H3>Return Value</H3>Returns subkeys as tuples of  (name, reserved, class, last write time). Reserved will always be 0.<P>
 
 
 

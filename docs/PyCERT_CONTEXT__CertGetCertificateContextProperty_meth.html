@@ -30,7 +30,9 @@
 
 <H1><A HREF="PyCERT_CONTEXT.html">PyCERT_CONTEXT</A>.CertGetCertificateContextProperty</H1><P>
 
-object = <B>CertGetCertificateContextProperty(<I>PropId</I></B>)<P>Retrieves the specified property from the certificate<P>
+object = <B>CertGetCertificateContextProperty(<I>PropId</I></B>)<P>Retrieves the specified property from the 
+
+certificate<P>
 
 <H3>Parameters</H3><P><DT><I>PropId</I> : int<P>
 
@@ -84,17 +86,25 @@ object = <B>CertGetCertificateContextProperty(<I>PropId</I></B>)<P>Retrieves the
 
 <TR><TD>CERT_KEY_PROV_HANDLE_PROP_ID</TD><TD><A HREF="PyCRYPTPROV.html">PyCRYPTPROV</A></TD></TR>
 
-<TR><TD>CERT_SUBJECT_PUBLIC_KEY_MD5_HASH_PROP_ID</TD><TD>String containing a hash</TD></TR>
+<TR><TD>CERT_SUBJECT_PUBLIC_KEY_MD5_HASH_PROP_ID</TD><TD>String 
 
-<TR><TD>CERT_ISSUER_PUBLIC_KEY_MD5_HASH_PROP_ID</TD><TD>String containing a hash</TD></TR>
+containing a hash</TD></TR>
 
-<TR><TD>CERT_CTL_USAGE_PROP_ID</TD><TD>Encoded CTL_USAGE, decode as X509_ENHANCED_KEY_USAGE (CTL_USAGE and CERT_ENHKEY_USAGE are identical)</TD></TR>
+<TR><TD>CERT_ISSUER_PUBLIC_KEY_MD5_HASH_PROP_ID</TD><TD>String 
+
+containing a hash</TD></TR>
+
+<TR><TD>CERT_CTL_USAGE_PROP_ID</TD><TD>Encoded CTL_USAGE, decode as X509_ENHANCED_KEY_USAGE (CTL_USAGE and 
+
+CERT_ENHKEY_USAGE are identical)</TD></TR>
 
 <TR><TD>CERT_ENHKEY_USAGE_PROP_ID</TD><TD>Encoded CTL_USAGE. Can be decoded using <B>cryptoapi::CryptDecodeObjectEx</B>
 
 
 
- with X509_ENHANCED_KEY_USAGE</TD></TR>
+ 
+
+with X509_ENHANCED_KEY_USAGE</TD></TR>
 
 <TR><TD>CERT_KEY_PROV_INFO_PROP_ID</TD><TD>CRYPT_KEY_PROV_INFO dict</TD></TR>
 

@@ -36,9 +36,13 @@
 
 <DD>ACL_REVISION or ACL_REVISION_DS<P><DT><I>AceFlags</I> : int<P>
 
-<DD>Combination of ACE inheritance flags (CONTAINER_INHERIT_ACE,INHERIT_ONLY_ACE,INHERITED_ACE,NO_PROPAGATE_INHERIT_ACE, and OBJECT_INHERIT_ACE)<P><DT><I>MandatoryPolicy</I> : int<P>
+<DD>Combination of ACE inheritance flags 
 
-<DD>Access policy for processes with lower integrity level, combination of SYSTEM_MANDATORY_LABEL_* flags<P><DT><I>LabelSid</I> : <A HREF="PySID.html">PySID</A><P>
+(CONTAINER_INHERIT_ACE,INHERIT_ONLY_ACE,INHERITED_ACE,NO_PROPAGATE_INHERIT_ACE, and OBJECT_INHERIT_ACE)<P><DT><I>MandatoryPolicy</I> : int<P>
+
+<DD>Access policy for processes with lower integrity level, combination of 
+
+SYSTEM_MANDATORY_LABEL_* flags<P><DT><I>LabelSid</I> : <A HREF="PySID.html">PySID</A><P>
 
 <DD>Integrity level SID.  This can be created using CreateWellKnownSid with Win*LabelSid. 
 

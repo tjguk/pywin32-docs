@@ -50,11 +50,17 @@ int = <B>DocumentProperties(<I>HWnd</I><I>, hPrinter</I>
 
 <DD>Name of printer<P><DT><I>DevModeOutput</I> : <A HREF="PyDEVMODE.html">PyDEVMODE</A><P>
 
-<DD>PyDEVMODE object that receives modified info, can be None if DM_OUT_BUFFER not specified<P><DT><I>DevModeInput</I> : <A HREF="PyDEVMODE.html">PyDEVMODE</A><P>
+<DD>PyDEVMODE object that receives modified info, can be None if DM_OUT_BUFFER 
 
-<DD>PyDEVMODE that specifies initial configuration, can be None if DM_IN_BUFFER not specified<P><DT><I>Mode</I> : int<P>
+not specified<P><DT><I>DevModeInput</I> : <A HREF="PyDEVMODE.html">PyDEVMODE</A><P>
 
-<DD>A combination of DM_IN_BUFFER, DM_OUT_BUFFER, and DM_IN_PROMPT - pass 0 to retrieve driver data size<P><H3>Return Value</H3>If DM_IN_PROMPT is specified, returned value will be IDOK or IDCANCEL<P>
+<DD>PyDEVMODE that specifies initial configuration, can be None if DM_IN_BUFFER 
+
+not specified<P><DT><I>Mode</I> : int<P>
+
+<DD>A combination of DM_IN_BUFFER, DM_OUT_BUFFER, and DM_IN_PROMPT - pass 0 to retrieve driver data 
+
+size<P><H3>Return Value</H3>If DM_IN_PROMPT is specified, returned value will be IDOK or IDCANCEL<P>
 
 
 

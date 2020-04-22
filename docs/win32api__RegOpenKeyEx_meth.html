@@ -40,7 +40,9 @@
 
 <H3>Parameters</H3><P><DT><I>key</I> : <A HREF="PyHKEY.html">PyHKEY</A>/int<P>
 
-<DD>An already open key, or any one of the following win32con constants:<BR>HKEY_CLASSES_ROOT<BR>HKEY_CURRENT_USER<BR>HKEY_LOCAL_MACHINE<BR>HKEY_USERS<P><DT><I>subKey</I> : string<P>
+<DD>An already open key, or any one of the following win32con 
+
+constants:<BR>HKEY_CLASSES_ROOT<BR>HKEY_CURRENT_USER<BR>HKEY_LOCAL_MACHINE<BR>HKEY_USERS<P><DT><I>subKey</I> : string<P>
 
 <DD>The name of a key that this method opens. 
 
@@ -54,7 +56,9 @@ the handle returned is the same key handle passed in to the function.<P><DT><I>r
 
 <DT><I>sam=KEY_READ</I> : int<P>
 
-<DD>Specifies an access mask that describes the desired security access for the new key. This parameter can be a combination of the following win32con constants: 
+<DD>Specifies an access mask that describes the desired security access for the new key. 
+
+This parameter can be a combination of the following win32con constants: 
 
 <BR>KEY_ALL_ACCESS<BR>KEY_CREATE_LINK<BR>KEY_CREATE_SUB_KEY<BR>KEY_ENUMERATE_SUB_KEYS<BR>KEY_EXECUTE<BR>KEY_NOTIFY<BR>KEY_QUERY_VALUE<BR>KEY_READ<BR>KEY_SET_VALUE<BR>KEY_WRITE<BR><P>
 

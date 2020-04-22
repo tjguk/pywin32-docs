@@ -36,11 +36,11 @@ A tuple describing a control in a dialog box.<P>
 
 <H3>Items</H3><P><DL><DT>[0] <I>string/int</I> : windowClass<P>
 
-<DD>The window class.  If not a string, it must be in integer defining one of the built-in Windows controls. 
+<DD>The window class.  If not a string, it must be in integer defining one of the 
 
-If a string, it must be a pre-registered windows class name, a built-in class, or the CLSID of an OLE controls. 
+built-in Windows controls. If a string, it must be a pre-registered windows class name, a built-in class, or the 
 
-Built-in classes include:<P></DL>
+CLSID of an OLE controls. Built-in classes include:<P></DL>
 
 <P><TABLE COLS=2 WIDTH="100%" CELLSPACING=15>
 
@@ -138,7 +138,9 @@ object at runtime.<P></DL>
 
 <DL><DT>[3] <I>(int,int,int,int)</I> : (x,y,cx,cy)<P>
 
-<DD>The bounding rectange for the control, relative to the upper left of the dialog, in dialog units.<P></DL>
+<DD>The bounding rectange for the control, relative to the upper left of 
+
+the dialog, in dialog units.<P></DL>
 
 <DL><DT>[4] <I>int</I> : style<P>
 
@@ -152,7 +154,9 @@ other constants may also be valid (eg, BS_* for Button, ES_* for Edit controls, 
 
 <DL><DT>[6] <I>buffer</I> : extraData<P>
 
-<DD>A byte string or buffer used as extra data for the control.  The value depends on the control.<P></DL>
+<DD>A byte string or buffer used as extra data for the control.  The value depends on 
+
+the control.<P></DL>
 
 
     </div>

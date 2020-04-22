@@ -44,13 +44,19 @@ dict = <B>CryptQueryObject(<I>ObjectType</I><I>, Object</I>
 
 <DD>Type of input, CERT_QUERY_OBJECT_BLOB or CERT_QUERY_OBJECT_FILE<P><DT><I>Object</I> : str<P>
 
-<DD>Raw data or a filename containing the data to be queried depending on ObjectType<P><DT><I>ExpectedContentTypeFlags=CERT_QUERY_CONTENT_FLAG_ALL</I> : int<P>
+<DD>Raw data or a filename containing the data to be queried depending on 
 
-<DD>One of the CERT_QUERY_CONTENT_FLAG_* constants<P>
+ObjectType<P><DT><I>ExpectedContentTypeFlags=CERT_QUERY_CONTENT_FLAG_ALL</I> : int<P>
+
+<DD>One of the 
+
+CERT_QUERY_CONTENT_FLAG_* constants<P>
 
 <DT><I>ExpectedFormatTypeFlags=CERT_QUERY_FORMAT_FLAG_ALL</I> : int<P>
 
-<DD>One of the CERT_QUERY_FORMAT_FLAG_* constants<P>
+<DD>One of the 
+
+CERT_QUERY_FORMAT_FLAG_* constants<P>
 
 <DT><I>Flags=0</I> : int<P>
 
@@ -64,9 +70,9 @@ dict = <B>CryptQueryObject(<I>ObjectType</I><I>, Object</I>
 
 <BR>FormatType:int,&#09;&#09;&#09;&#09;&#09;## One of the CERT_QUERY_FORMAT_* constants 
 
-<BR>CertStore:<A HREF="PyCERTSTORE.html">PyCERTSTORE</A>,&#09;&#09;## Handle to certificate store containing all certficates in the object, may be None 
+<BR>CertStore:<A HREF="PyCERTSTORE.html">PyCERTSTORE</A>,&#09;&#09;## Handle to certificate store containing all certficates in the object, may be 
 
-<BR>Msg:<A HREF="PyCRYPTMSG.html">PyCRYPTMSG</A>,&#09;&#09;&#09;&#09;## If input doesn't contains a PKCS7 message, will be None 
+None &#09;<BR>Msg:<A HREF="PyCRYPTMSG.html">PyCRYPTMSG</A>,&#09;&#09;&#09;&#09;## If input doesn't contains a PKCS7 message, will be None 
 
 <BR>Context:<A HREF="PyCERT_CONTEXT.html">PyCERT_CONTEXT</A>}&#09;&#09;## A certificate, CRL, or CTL context depending on ContentType, may be None<P>
 

@@ -32,7 +32,9 @@
 
 int = <B>PumpWaitingMessages(<I>firstMessage</I><I>, lastMessage</I>
 
-</B>)<P>Recursively start a new message dispatching loop while any message remain in the queue.<P>
+</B>)<P>Recursively start a new message dispatching loop while any message remain 
+
+in the queue.<P>
 
 <H3>Parameters</H3><P><DT><I>firstMessage=WM_PAINT</I> : int<P>
 
@@ -44,7 +46,9 @@ int = <B>PumpWaitingMessages(<I>firstMessage</I><I>, lastMessage</I>
 
 <H3>Comments</H3>
 
-This allows an application which is performing a long operation to dispatch paint messages during the operation.<P>
+This allows an application which is performing a long operation to dispatch paint messages during the 
+
+operation.<P>
 
 <H3>Return Value</H3>The result is 1 if a WM_QUIT message was processed, otherwise 0.<P>
 

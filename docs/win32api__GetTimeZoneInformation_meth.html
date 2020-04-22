@@ -34,7 +34,9 @@ tuple = <B>GetTimeZoneInformation(<I>times_as_tuples</I></B>)<P>Retrieves the sy
 
 <H3>Parameters</H3><P><DT><I>times_as_tuples=False</I> : bool<P>
 
-<DD>If true, the SYSTEMTIME elements are returned as tuples instead of a time object.<P>
+<DD>If true, the SYSTEMTIME elements are returned as tuples instead of a time 
+
+object.<P>
 
 <H3>Return Value</H3>The return value is a tuple of (rc, tzinfo), where rc is 
 
@@ -74,21 +76,47 @@ the integer return code from ::GetTimezoneInformation(), which may be<P>
 
 <H3>Items</H3><P><DL><DT>[0] <I>int</I> : bias<P>
 
-<DD>Specifies the current bias, in minutes, for local time translation on this computer. The bias is the difference, in minutes, between Coordinated Universal Time (UTC) and local time. All translations between UTC and local time are based on the following formula:<BR><BR>UTC = local time + bias <BR><BR><P></DL>
+<DD>Specifies the current bias, in minutes, for local time translation on this computer. The 
+
+bias is the difference, in minutes, between Coordinated Universal Time (UTC) and local time. All translations 
+
+between UTC and local time are based on the following formula:<BR><BR>UTC = local time + bias <BR><BR><P></DL>
 
 <DL><DT>[1] <I>unicode</I> : standardName<P>
 
-<DD>Specifies a string associated with standard time on this operating system. For example, this member could contain "EST" to indicate Eastern Standard Time. This string is not used by the operating system, so anything stored there using the SetTimeZoneInformation function is returned unchanged by the GetTimeZoneInformation function. This string can be empty.<P></DL>
+<DD>Specifies a string associated with standard time on this operating system. For 
+
+example, this member could contain "EST" to indicate Eastern Standard Time. This string is not used by the 
+
+operating system, so anything stored there using the SetTimeZoneInformation function is returned unchanged by the 
+
+GetTimeZoneInformation function. This string can be empty.<P></DL>
 
 <DL><DT>[2] <I><A HREF="PyTime.html">PyTime</A>/tuple</I> : standardTime<P>
 
-<DD>Specifies a SYSTEMTIME object that contains a date and local time when the transition from daylight saving time to standard time occurs on this operating system. If this date is not specified, the wMonth member in the SYSTEMTIME structure must be zero. If this date is specified, the DaylightDate value in the TIME_ZONE_INFORMATION structure must also be specified. 
+<DD>Specifies a SYSTEMTIME object that contains a date and local time when 
 
-<BR>To select the correct day in the month, set the wYear member to zero, the wDayOfWeek member to an appropriate weekday, and the wDay member to a value in the range 1 through 5. Using this notation, the first Sunday in April can be specified, as can the last Thursday in October (5 is equal to "the last").<P></DL>
+the transition from daylight saving time to standard time occurs on this operating system. If this date is not 
+
+specified, the wMonth member in the SYSTEMTIME structure must be zero. If this date is specified, the 
+
+DaylightDate value in the TIME_ZONE_INFORMATION structure must also be specified. <BR>To select the correct day 
+
+in the month, set the wYear member to zero, the wDayOfWeek member to an appropriate weekday, and the wDay member 
+
+to a value in the range 1 through 5. Using this notation, the first Sunday in April can be specified, as can the 
+
+last Thursday in October (5 is equal to "the last").<P></DL>
 
 <DL><DT>[3] <I>int</I> : standardBias<P>
 
-<DD>Specifies a bias value to be used during local time translations that occur during standard time. This member is ignored if a value for the StandardDate member is not supplied. <BR>This value is added to the value of the Bias member to form the bias used during standard time. In most time zones, the value of this member is zero.<P></DL>
+<DD>Specifies a bias value to be used during local time translations that occur during 
+
+standard time. This member is ignored if a value for the StandardDate member is not supplied. <BR>This value is 
+
+added to the value of the Bias member to form the bias used during standard time. In most time zones, the value 
+
+of this member is zero.<P></DL>
 
 <DL><DT>[4] <I>unicode</I> : daylightName<P>
 
@@ -100,9 +128,13 @@ the integer return code from ::GetTimezoneInformation(), which may be<P>
 
 <DL><DT>[6] <I>int</I> : daylightBias<P>
 
-<DD>Specifies a bias value to be used during local time translations that occur during daylight saving time. This member is ignored if a value for the DaylightDate member is not supplied. 
+<DD>Specifies a bias value to be used during local time translations that occur during 
 
-<BR>This value is added to the value of the Bias member to form the bias used during daylight saving time. In most time zones, the value of this member is &#150; 60.<P></DL>
+daylight saving time. This member is ignored if a value for the DaylightDate member is not supplied. <BR>This 
+
+value is added to the value of the Bias member to form the bias used during daylight saving time. In most time 
+
+zones, the value of this member is 60.<P></DL>
 
 
     </div>

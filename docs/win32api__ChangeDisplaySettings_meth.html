@@ -36,7 +36,9 @@ int = <B>ChangeDisplaySettings(<I>DevMode</I><I>, Flags</I>
 
 <H3>Parameters</H3><P><DT><I>DevMode</I> : <A HREF="PyDEVMODE.html">PyDEVMODE</A><P>
 
-<DD>A PyDEVMODE object as returned from EnumDisplaySettings, or None to reset to default settings from registry<P><DT><I>Flags</I> : int<P>
+<DD>A PyDEVMODE object as returned from EnumDisplaySettings, or None to reset to 
+
+default settings from registry<P><DT><I>Flags</I> : int<P>
 
 <DD>One of the win32con.CDS_* constants, or 0<P><H3>Return Value</H3>Returns DISP_CHANGE_SUCCESSFUL on success, or one of the DISP_CHANGE_* error constants on failure<P>
 

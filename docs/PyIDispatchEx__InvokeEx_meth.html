@@ -42,7 +42,9 @@ object = <B>InvokeEx(<I>dispid</I><I>, lcid</I>
 
 <I>, serviceProvider</I>
 
-</B>)<P>Provides access to properties and methods exposed by a <A HREF="PyIDispatchEx.html">PyIDispatchEx</A> object.<P>
+</B>)<P>Provides access to properties and methods exposed by a <A HREF="PyIDispatchEx.html">PyIDispatchEx</A> 
+
+object.<P>
 
 <H3>Parameters</H3><P><DT><I>dispid</I> : int<P>
 
@@ -54,15 +56,21 @@ object = <B>InvokeEx(<I>dispid</I><I>, lcid</I>
 
 <DD>The arguments.<P><DT><I>types=None</I> : [object, ...]<P>
 
-<DD>A tuple of type description object, or None if type descriptions are not available.<P>
+<DD>A tuple of type description object, or None if type 
+
+descriptions are not available.<P>
 
 <DT><I>returnDesc=1</I> : object|int<P>
 
-<DD>If types==None, should be a BOOL indicating if the result is needed.  If types is a tuple, then should a be type description.<P>
+<DD>If types==None, should be a BOOL indicating if the 
+
+result is needed.  If types is a tuple, then should a be type description.<P>
 
 <DT><I>serviceProvider=None</I> : <A HREF="PyIServiceProvider.html">PyIServiceProvider</A><P>
 
-<DD>A service provider object supplied by the caller which allows the object to obtain services from the caller. Can be None.<P>
+<DD>A service provider object supplied by 
+
+the caller which allows the object to obtain services from the caller. Can be None.<P>
 
 
     </div>

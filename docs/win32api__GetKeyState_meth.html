@@ -34,13 +34,19 @@ int = <B>GetKeyState(<I>key</I></B>)<P>Retrieves the status of the specified key
 
 <H3>Parameters</H3><P><DT><I>key</I> : int<P>
 
-<DD>Specifies a virtual key. If the desired virtual key is a letter or digit (A through Z, a through z, or 0 through 9), key must be set to the ASCII value of that character. For other keys, it must be a virtual-key code.<P><H3>Comments</H3>
+<DD>Specifies a virtual key. If the desired virtual key is a letter or digit (A through Z, a through 
+
+z, or 0 through 9), key must be set to the ASCII value of that character. For other keys, it must be a 
+
+virtual-key code.<P><H3>Comments</H3>
 
 The key status returned from this function changes as a given thread 
 
 reads key messages from its message queue. The status does not reflect the 
 
-interrupt-level state associated with the hardware. Use the <A HREF="win32api__GetAsyncKeyState_meth.html">win32api::GetAsyncKeyState</A> method to retrieve that information.<P>
+interrupt-level state associated with the hardware. Use the <A HREF="win32api__GetAsyncKeyState_meth.html">win32api::GetAsyncKeyState</A> method to retrieve 
+
+that information.<P>
 
 <H3>Win32 API References</H3><P><DT>Search for <i>GetKeyState</i> at <a href="http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetKeyState" target="_blank">msdn</a>, <a href="http://www.google.com/search?q=GetKeyState" target="_blank">google</a> or <a href="http://groups.google.com/groups?q=GetKeyState" target="_blank">google groups</a>.<P>
 

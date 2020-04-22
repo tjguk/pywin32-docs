@@ -44,7 +44,9 @@ Dict of parms defining how a message will be signed<P>
 
 <DT><B><A HREF="PyCRYPT_ALGORITHM_IDENTIFIER.html">PyCRYPT_ALGORITHM_IDENTIFIER</A> HashAlgorithm</B>
 
-<DD>Algorithm to be used for signed hash<P>
+<DD>Algorithm to be used for signed 
+
+hash<P>
 
 
 
@@ -56,19 +58,25 @@ Dict of parms defining how a message will be signed<P>
 
 <DT><B>(<A HREF="PyCERT_CONTEXT.html">PyCERT_CONTEXT</A>,...) MsgCert</B>
 
-<DD>Optional sequence of certificate to be included in the message.<P>
+<DD>Optional sequence of certificate to be included in 
+
+the message.<P>
 
 
 
 <DT><B>(CRL_CONTEXT,...) MsgCrl</B>
 
-<DD>Optional. Sequence of certificate revocation lists. Not yet supported, use only None.<P>
+<DD>Optional. Sequence of certificate revocation lists. Not yet 
+
+supported, use only None.<P>
 
 
 
 <DT><B>(<A HREF="PyCRYPT_ATTRIBUTE.html">PyCRYPT_ATTRIBUTE</A>,...) AuthAttr</B>
 
-<DD>Sequence of canonical attributes to be added to the message<P>
+<DD>Sequence of canonical attributes to be added to 
+
+the message<P>
 
 
 
@@ -80,19 +88,25 @@ Dict of parms defining how a message will be signed<P>
 
 <DT><B>int Flags</B>
 
-<DD>Optional CRYPT_MESSAGE_*_FLAG that indicates content type if output is to be further encoded.<P>
+<DD>Optional CRYPT_MESSAGE_*_FLAG that indicates content type if output is 
+
+to be further encoded.<P>
 
 
 
 <DT><B>int InnerContentType</B>
 
-<DD>Optional, one of the CMSG_* content types if message is already encoded, .<P>
+<DD>Optional, one of the CMSG_* content types if 
+
+message is already encoded, .<P>
 
 
 
 <DT><B>int MsgEncodingType</B>
 
-<DD>Encoding types, optional. Defaults to X509_ASN_ENCODING combined with PKCS_7_ASN_ENCODING<P>
+<DD>Encoding types, optional. Defaults to 
+
+X509_ASN_ENCODING combined with PKCS_7_ASN_ENCODING<P>
 
 
 

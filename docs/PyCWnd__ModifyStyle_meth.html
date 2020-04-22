@@ -42,21 +42,19 @@ int = <B>ModifyStyle(<I>remove</I><I>, add</I>
 
 <DD>Specifies window styles to be added during style modification.<P><DT><I>flags=0</I> : int<P>
 
-<DD>Flags to be passed to SetWindowPos, or zero if SetWindowPos should not be called. The default is zero.<P>
+<DD>Flags to be passed to SetWindowPos, or zero if SetWindowPos should not be 
+
+called. The default is zero.<P>
 
 <H3>Comments</H3>
 
-If nFlags is nonzero, ModifyStyle calls the Windows API function ::SetWindowPos and redraws the window by combining nFlags with the following four preset flags: 
+If nFlags is nonzero, ModifyStyle calls the Windows API function ::SetWindowPos and redraws the window by 
 
-<BR>* SWP_NOSIZE&#09;Retains the current size. 
+combining nFlags with the following four preset flags: <BR>* SWP_NOSIZE&#09;Retains the current size. <BR>* 
 
-<BR>* SWP_NOMOVE&#09;Retains the current position. 
+SWP_NOMOVE&#09;Retains the current position. <BR>* SWP_NOZORDER&#09;Retains the current Z order. <BR>* 
 
-<BR>* SWP_NOZORDER&#09;Retains the current Z order. 
-
-<BR>* SWP_NOACTIVATE&#09;Does not activate the window. 
-
-<BR>See also <A HREF="PyCWnd__ModifyStyleEx_meth.html">PyCWnd::ModifyStyleEx</A><P>
+SWP_NOACTIVATE&#09;Does not activate the window. <BR>See also <A HREF="PyCWnd__ModifyStyleEx_meth.html">PyCWnd::ModifyStyleEx</A><P>
 
 <H3>MFC References</H3><P><DT>CWnd::ModifyStyle<P>
 

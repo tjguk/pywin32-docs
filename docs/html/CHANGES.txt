@@ -4,8 +4,74 @@ Generally created by hand after running:
    hg log -rb2xx: > log.out
 However contributors are encouraged to add their own entries for their work.
 
+Since build 226:
+----------------
+* Improved the search for pywin32 system DLLs logic. Useful when installed
+  in virtual environments (#1442, @CristiFati)
+
+* Added MAPI IMsgServiceAdmin2 interface (Nick Czeczulin, #1411)
+
+Since build 225:
+----------------
+* The directory with the pywin32 system DLLs is now added to the start of PATH
+  for version 3.7 and earlier, and passed to os.add_dll_directory() on 3.8 and
+  later. This will hopefully work around problems loading pywintypes.dll in
+  various situations.
+
+* Conversions to and from COM VT_DATE types should no longer lose milliseconds.
+
+* Formatting eventlog messages should now handle larger messages and inserts
+  (Ofek Lev via #1421)
+
+* Fixed that win32help was very broken everywhere except 32bit 2.7 (#1434)
+
+* A number of MAPI improvements from Nick Czeczulin.
+
+Since build 224:
+----------------
+* Huge shout-out to @thopiekar for helping with github triage, getting CI
+  working and sane, and other general help and patches!
+
+* Significant work by @joankaradimov in porting pywin32 so that it works in a
+  MingGW/msys2 environment.
+
+* ntsecuritycon.FILE_ALL_ACCESS had an incorrect value (#1354)
+
+* SetSecurityDescriptorGroup now accepts None as group value (#1382)
+
+* Fix an issue where win32gui.EnumChildWindows may throw a spurious exception.
+  (#1350)
+
+* Better support for numpy objects in COM methods (#1388, @panikc and
+  @SReicheltPTV)
+
+* PythonWin is now able to start with non-English active keyboard layout.
+
+* Corrected wMilliseconds truncation in PyTime::getattro (Dorian Bivolaru)
+
+* Implement PdhGetFormattedCounterArray (#1306, konserw)
+
+Since build 223:
+----------------
+* Built with a released version of Python 3.7, which fixes various date related
+  issues with Python 3.7
+
+* Fix a regression introduced in build 220 around how some COM properties are
+  handled (#1211 and #1199)
+
+* Everything is now build with the Windows 8.1 SDK. While this should typically
+  be invisible, it is mentioned because it might explain obscure issues that
+  creep in, so it should be explicitly called out as a change.
+  On the plus side, this makes building the extensions far simpler.
+
+* win32serviceutil - in GetServiceClassString, skip rewrite of file name (fname)
+  when win32api.FindFiles returns an empty list, e.g., if the service has been
+  packaged in a zip or exe. (fixes issue #642)
+
 Since build 222:
 ----------------
+* pywin32.pth now arranges for the pywin32_system32 directory to be on
+  PATH to help with pypi installations (thanks to @xovian via #1153)
 
 Since build 221:
 ----------------

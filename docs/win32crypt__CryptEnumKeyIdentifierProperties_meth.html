@@ -36,7 +36,9 @@ list = <B>CryptEnumKeyIdentifierProperties(<I>KeyIdentifier</I><I>, PropId</I>
 
 <I>, ComputerName</I>
 
-</B>)<P>Enumerates private keys for certificates and their properties<P>
+</B>)<P>Enumerates private keys for certificates and their 
+
+properties<P>
 
 <H3>Parameters</H3><P><DT><I>KeyIdentifier=None</I> : string<P>
 
@@ -44,15 +46,21 @@ list = <B>CryptEnumKeyIdentifierProperties(<I>KeyIdentifier</I><I>, PropId</I>
 
 <DT><I>PropId=0</I> : int<P>
 
-<DD>CERT_*_PROP_ID constant. Limits returned values to specified propery, Use 0 for all<P>
+<DD>CERT_*_PROP_ID constant. Limits returned values to specified propery, Use 
+
+0 for all<P>
 
 <DT><I>Flags=0</I> : int<P>
 
-<DD>Can be CRYPT_KEYID_MACHINE_FLAG to list keys for local machine, or remote machine if ComputerName is given<P>
+<DD>Can be CRYPT_KEYID_MACHINE_FLAG to list keys for local machine, or remote 
+
+machine if ComputerName is given<P>
 
 <DT><I>ComputerName=None</I> : <A HREF="PyUnicode.html">PyUnicode</A><P>
 
-<DD>Name of remote computer, use None for local machine<P>
+<DD>Name of remote computer, use None for local 
+
+machine<P>
 
 
     </div>

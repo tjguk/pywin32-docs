@@ -38,9 +38,13 @@ int/None = <B>RegisterServiceCtrlHandler(<I>serviceName</I><I>, callback</I>
 
 <H3>Parameters</H3><P><DT><I>serviceName</I> : <A HREF="PyUnicode.html">PyUnicode</A><P>
 
-<DD>The name of the service.  This is provided in args[0] of the service class __init__ method.<P><DT><I>callback</I> : object<P>
+<DD>The name of the service.  This is provided in args[0] of the service class 
 
-<DD>The Python function that performs as the control function.  This will be called with an integer status argument.<P><DT><I>extra_args=False</I> : bool<P>
+__init__ method.<P><DT><I>callback</I> : object<P>
+
+<DD>The Python function that performs as the control function.  This will be called with an 
+
+integer status argument.<P><DT><I>extra_args=False</I> : bool<P>
 
 <DD>Is this callback expecting the additional 2 args passed by HandlerEx?<P>
 

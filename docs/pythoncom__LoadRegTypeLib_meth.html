@@ -50,13 +50,21 @@
 
 <H3>Comments</H3>
 
-LoadRegTypeLib compares the requested version numbers against those found in the system registry, and takes one of the following actions:<BR> 
+LoadRegTypeLib compares the requested version numbers against those found in the system registry, and takes 
 
-If one of the registered libraries exactly matches both the requested major and minor version numbers, then that type library is loaded. <BR> 
+one of the following actions:<BR> If one of the registered libraries exactly matches both the requested major and 
 
-If one or more registered type libraries exactly match the requested major version number, and has a greater minor version number than that requested, the one with the greatest minor version number is loaded. <BR> 
+minor version numbers, then that type library is loaded. <BR> If one or more registered type libraries exactly 
 
-If none of the registered type libraries exactly match the requested major version number (or if none of those that do exactly match the major version number also have a minor version number greater than or equal to the requested minor version number), then LoadRegTypeLib returns an error.<P>
+match the requested major version number, and has a greater minor version number than that requested, the one 
+
+with the greatest minor version number is loaded. <BR> If none of the registered type libraries exactly match the 
+
+requested major version number (or if none of those that do exactly match the major version number also have a 
+
+minor version number greater than or equal to the requested minor version number), then LoadRegTypeLib returns an 
+
+error.<P>
 
 
     </div>

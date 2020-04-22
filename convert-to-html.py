@@ -195,6 +195,7 @@ SPECIAL_PROCESSING = {
 
 ARGS = set (["nogenerate", "debug", "nochanges"])
 def main (args=[]):
+  args = set(args)
   if not set (args) <= ARGS:
     raise RuntimeError ("Arguments %s not recognised; should only be %s" % (", ".join (set (args).difference (ARGS)), ", ".join (ARGS)))
 

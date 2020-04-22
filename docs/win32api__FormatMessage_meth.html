@@ -34,15 +34,21 @@ string = <B>FormatMessage(<I>errCode</I></B>)<P>Returns an error message from th
 
 <H3>Parameters</H3><P><DT><I>errCode=0</I> : int<P>
 
-<DD>The error code to return the message for,  If this value is 0, then GetLastError() is called to determine the error code.<P>
+<DD>The error code to return the message for,  If this value is 0, then GetLastError() is 
+
+called to determine the error code.<P>
 
 <H3>Alternative Parameters</H3><P><DT><I>flags</I><P>
 
-<DD>Flags for the call.  Note that FORMAT_MESSAGE_ALLOCATE_BUFFER and FORMAT_MESSAGE_ARGUMENT_ARRAY will always be added.<P>
+<DD>Flags for the call.  Note that FORMAT_MESSAGE_ALLOCATE_BUFFER and 
+
+FORMAT_MESSAGE_ARGUMENT_ARRAY will always be added.<P>
 
 <DT><I>source</I><P>
 
-<DD>The source object.  If flags contain FORMAT_MESSAGE_FROM_HMODULE it should be an int; 
+<DD>The source object.  If flags contain FORMAT_MESSAGE_FROM_HMODULE it should be an 
+
+int; 
 
 if flags contain FORMAT_MESSAGE_FROM_STRING it should be a string containing the error msg; 
 

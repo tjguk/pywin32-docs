@@ -42,13 +42,19 @@ int, int = <B>Dial(<I>dialExtensions</I><I>, fileName</I>
 
 <P>
 
-<DD>An object providing the RASDIALEXTENSIONS information, or None<P><DT><I>fileName</I> : string<P>
+<DD>An object providing the RASDIALEXTENSIONS 
 
-<DD>Specifies the filename of the phonebook entry, or None.  Ignored on Win95.<P><DT><I>RasDialParams</I> : <A HREF="RASDIALPARAMS.html">RASDIALPARAMS</A><P>
+information, or None<P><DT><I>fileName</I> : string<P>
+
+<DD>Specifies the filename of the phonebook entry, or None.  Ignored on 
+
+Win95.<P><DT><I>RasDialParams</I> : <A HREF="RASDIALPARAMS.html">RASDIALPARAMS</A><P>
 
 <DD>A tuple describing a RASDIALPARAMS structure.<P><DT><I>callback</I> : method or hwnd<P>
 
-<DD>The method to be called when RAS events occur, or None.  If not None, the function must have the signature of <A HREF="win32ras__RasDialFunc1_meth.html">win32ras::RasDialFunc1</A><P><H3>Comments</H3>
+<DD>The method to be called when RAS events occur, or None. 
+
+If not None, the function must have the signature of <A HREF="win32ras__RasDialFunc1_meth.html">win32ras::RasDialFunc1</A><P><H3>Comments</H3>
 
 Note - this handle must be closed using <A HREF="win32ras__HangUp_meth.html">win32ras::HangUp</A>, or 
 

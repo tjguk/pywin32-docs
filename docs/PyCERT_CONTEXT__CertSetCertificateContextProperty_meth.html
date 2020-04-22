@@ -36,7 +36,9 @@
 
 <DD>Id of property to be set, CERT_*_PROP_ID<P><DT><I>Data</I> : object<P>
 
-<DD>The value to be set for the property.  Type is dependent on PropId. Use None to delete a property.<P><DT><I>Flags=0</I> : int<P>
+<DD>The value to be set for the property.  Type is 
+
+dependent on PropId. Use None to delete a property.<P><DT><I>Flags=0</I> : int<P>
 
 <DD>Combination of CERT_SET_* flags<P>
 
@@ -60,11 +62,15 @@
 
 <TR><TD></TD><TD></TD></TR>
 
-<TR><TD>CERT_ARCHIVED_PROP_ID</TD><TD>None causes Archived flag to be cleared, any other causes it to be set 
+<TR><TD>CERT_ARCHIVED_PROP_ID</TD><TD>None causes Archived flag to be cleared, any other 
+
+causes it to be set 
 
 no actual data, non-NULL pvData indicates presence of flag</TD></TR>
 
-<TR><TD>CERT_DATE_STAMP_PROP_ID</TD><TD><A HREF="PyTime.html">PyTime</A> specifying when cert was added to store</TD></TR>
+<TR><TD>CERT_DATE_STAMP_PROP_ID</TD><TD><A HREF="PyTime.html">PyTime</A> specifying when cert was added to 
+
+store</TD></TR>
 
 <TR><TD>CERT_DESCRIPTION_PROP_ID</TD><TD>Unicode string</TD></TR>
 
@@ -86,9 +92,13 @@ no actual data, non-NULL pvData indicates presence of flag</TD></TR>
 
 <TR><TD>CERT_KEY_IDENTIFIER_PROP_ID</TD><TD>String containing the key id</TD></TR>
 
-<TR><TD>CERT_SUBJECT_PUBLIC_KEY_MD5_HASH_PROP_ID</TD><TD>String containing the hash</TD></TR>
+<TR><TD>CERT_SUBJECT_PUBLIC_KEY_MD5_HASH_PROP_ID</TD><TD>String 
 
-<TR><TD>CERT_ISSUER_PUBLIC_KEY_MD5_HASH_PROP_ID</TD><TD>String containing the hash</TD></TR>
+containing the hash</TD></TR>
+
+<TR><TD>CERT_ISSUER_PUBLIC_KEY_MD5_HASH_PROP_ID</TD><TD>String 
+
+containing the hash</TD></TR>
 
 <TR><TD>CERT_SUBJECT_NAME_MD5_HASH_PROP_ID</TD><TD>String containing the hash</TD></TR>
 

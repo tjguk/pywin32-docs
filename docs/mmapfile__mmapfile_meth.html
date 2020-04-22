@@ -44,27 +44,31 @@ This method uses the following API functions: CreateFileMapping, MapViewOfFile, 
 
 <H3>Parameters</H3><P><DT><I>File</I> : str<P>
 
-<DD>Name of file.  Use None or '' when opening an existing named mapping, or to use system pagefile.<P><DT><I>Name</I> : str<P>
+<DD>Name of file.  Use None or '' when opening an existing named mapping, or 
+
+to use system pagefile.<P><DT><I>Name</I> : str<P>
 
 <DD>Name of mapping object to create or open, can be None<P><DT><I>MaximumSize=0</I> : int<P>
 
-<DD>Size of file mapping to create, should be specified as a multiple 
+<DD>Size of file mapping to create, should be specified as a 
 
-of system page size (see <A HREF="win32api__GetSystemInfo_meth.html">win32api::GetSystemInfo</A>).  Defaults to size of existing file if 0. 
+multiple of system page size (see <A HREF="win32api__GetSystemInfo_meth.html">win32api::GetSystemInfo</A>).  Defaults to size of 
 
-If an existing named mapping is opened, the returned object will have the same size as the original mapping.<P>
+existing file if 0. If an existing named mapping is opened, the returned object will 
+
+have the same size as the original mapping.<P>
 
 <DT><I>FileOffset=0</I> : int<P>
 
-<DD>Offset into the file at which to create view.  This should be specified as a 
+<DD>Offset into the file at which to create view.  This 
 
-multiple of system allocation granularity. (see <A HREF="win32api__GetSystemInfo_meth.html">win32api::GetSystemInfo</A>)<P>
+should be specified as a multiple of system allocation granularity. (see <A HREF="win32api__GetSystemInfo_meth.html">win32api::GetSystemInfo</A>)<P>
 
 <DT><I>NumberOfBytesToMap=0</I> : int<P>
 
-<DD>Size of view to create, also a multiple of system page size. 
+<DD>Size of view to create, also a multiple of system page 
 
-If 0, view will span from offset to end of file mapping.<P>
+size. If 0, view will span from offset to end of file mapping.<P>
 
 <H3>Comments</H3>
 
