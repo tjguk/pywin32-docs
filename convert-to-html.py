@@ -200,9 +200,10 @@ def main(args=[]):
         raise RuntimeError("Arguments %s not recognised; should only be %s" %(", ".join(set(args).difference(ARGS)), ", ".join(ARGS)))
 
     html_tempdir = os.path.join(tempfile.gettempdir(), "pywin32-docs-htmlhelp")
+
     html2_tempdir = "docs"
-    if not os.path.exists(html2_tempdir):
-            os.mkdir(html2_tempdir)
+    shutil.rmtree(html2_tempdir)
+    os.mkdir(html2_tempdir)
     css_filename = "pywin32.css"
     toc_filename = "contents.html"
     changes_filename = "changes.html"
@@ -247,6 +248,8 @@ def main(args=[]):
 
             for filename in filenames:
                 if not filename.lower().endswith((".txt", ".html", ".htm")): continue
+                name, ext = os.path.splitext(filename)
+                filename = name + ext.lower()
                 html_filepath = os.path.join(html_dirname, filename)
                 html2_filepath = os.path.join(html2_dirname, filename)
                 depth = html2_filepath.count("\\") - 1
