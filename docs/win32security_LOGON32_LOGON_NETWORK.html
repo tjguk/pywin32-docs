@@ -1,18 +1,18 @@
 
 <html>
-  <head>
-    <title>LOGON32_LOGON_NETWORK</title>
-    <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  </head>
-  <body>
-    
+    <head>
+        <title>LOGON32_LOGON_NETWORK</title>
+        <link href="pywin32.css" rel="stylesheet" type="text/css" media="all">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    <body>
+        
 <div class="navigation">
-  <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_constants.html">Constants</a> &gt; <a href="LOGON32_LOGON_NETWORK">LOGON32_LOGON_NETWORK</a>
+    <a href="contents.html">Contents</a> | <a href="PyWin32.html">Python for Win32 Extensions Help</a> &gt; <a href="win32.html">Win32 API</a> &gt; <a href="win32_constants.html">Constants</a> &gt; <a href="LOGON32_LOGON_NETWORK">LOGON32_LOGON_NETWORK</a>
 </div>
 
-    <div id="content">
-      
+        <div id="content">
+            
 
 
 
@@ -37,6 +37,6 @@
 This logon type is intended for high performance servers to authenticate clear text passwords. LogonUser does not cache credentials for this logon type. This is the fastest logon path, but there are two limitations. First, the function returns an impersonation token, not a primary token. You cannot use this token directly in the CreateProcessAsUser function. However, you can call the DuplicateTokenEx function to convert the token to a primary token, and then use it in CreateProcessAsUser. Second, if you convert the token to a primary token and use it in CreateProcessAsUser to start a process, the new process will not be able to access other network resources, such as remote servers or printers, through the redirector.<P>
 
 
-    </div>
-  </body>
+        </div>
+    </body>
 </html>

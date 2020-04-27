@@ -1,18 +1,18 @@
 
 <html>
-  <head>
-    <title>Python and COM - Implementation Details </title>
-    <link href="../../../../pywin32.css" rel="stylesheet" type="text/css" media="all">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  </head>
-  <body>
-    
+    <head>
+        <title>Python and COM - Implementation Details </title>
+        <link href="../../../../pywin32.css" rel="stylesheet" type="text/css" media="all">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    <body>
+        
 <div class="navigation">
-  <a href="../../../../contents.html">Contents</a> | 
+    <a href="../../../../contents.html">Contents</a> | 
 </div>
 
-    <div id="content">
-      
+        <div id="content">
+            
 
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
 <META NAME="Generator" CONTENT="Microsoft Word 97">
@@ -102,6 +102,6 @@ someIDispatch-&gt;QueryInterface(IID_IConnectionPoint, (void **)&amp;conPt);<BR>
 <P>For simple calls, there are 2 helpers available which will convert to and from PyObjects and VARIANTS. The call to convert a Python object to a VARIANT is simple in that it returns a VARIANT of the most appropriate type for the Python object - ie, the type of the Python object determines the resulting VARIANT type. </P>
 <P>There are also more complex conversion routines available, wrapped in a C++ helper class. Typically, these helpers are used whenever a specific variant type is known (eg, when an ITypeInfo is available for the object being used). In this case, all efforts are made to convert the Python type to the requested variant type - ie, in this situation, the VARIANT type determines how the Python object is coerced. In addition, this code supports the use of "ByRef" and pointer paramaters, providing and freeing any buffers necessary for the call. </P>
 
-    </div>
-  </body>
+        </div>
+    </body>
 </html>

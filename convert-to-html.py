@@ -154,7 +154,7 @@ to make the HTML display properly, no changes have been made.</p>
 
 <ul>
 <li> <a href="contents.html">Table of Contents</a> </li>
-<!--li> <a href="PyWin32.html">Front Page</a> </li-->
+<li> <a href="PyWin32.HTML">Front Page</a></li>
 <li> <a href="html/CHANGES.txt">Project ChangeLog</a> </li>
 <!-- li> <a href="changes.html">Added / Updated pages</a></li -->
 </ul>
@@ -209,8 +209,8 @@ def main(args=[]):
 
     if "nogenerate" not in args:
         print "Decompiling .chm..."
-        if not os.path.exists(html_tempdir):
-            os.mkdir(html_tempdir)
+        shutil.rmtree(html_tempdir)
+        os.mkdir(html_tempdir)
         os.system("hh.exe -decompile %s %s" %(html_tempdir, chm_filepath))
 
         print "Writing index.html..."
@@ -246,7 +246,7 @@ def main(args=[]):
                 os.mkdir(html2_dirname)
 
             for filename in filenames:
-                if not filename.lower().endswith((".txt", ".html")): continue
+                if not filename.lower().endswith((".txt", ".html", ".htm")): continue
                 html_filepath = os.path.join(html_dirname, filename)
                 html2_filepath = os.path.join(html2_dirname, filename)
                 depth = html2_filepath.count("\\") - 1
@@ -276,6 +276,11 @@ def main(args=[]):
     try:
         import git
     except ImportError:
+        args.add("nochanges")
+    else:
+        #
+        # FIXME: until we've got the git changes working
+        #
         args.add("nochanges")
     if "nochanges" not in args:
         print "Finding changes..."
